@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import Color from 'color';
 
 export const bigRes = 699.99;
-export const contWidth = '90%';
+export const contWidth = '85%';
 export const contMaxWidth = '1300px';
 export const headerHeight = '60px';
 export const headerColor = Color('white').darken(0.92).toString();

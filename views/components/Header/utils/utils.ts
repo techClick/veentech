@@ -29,4 +29,7 @@ export const tabs = [{
 }, {
   name: 'Grow my business',
   action: () => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' }),
+}, {
+  name: 'Contact',
+  action: () => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' }),
 }];

@@ -14,7 +14,7 @@ const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
   return (
     <S.Container id="header">
       <S.RelativeContainer>
-        <MediaQuery maxWidth={451}>
+        <MediaQuery maxWidth={570}>
           <S.MenuContainer>
             <S.Menu onClick={() => {
               if (isNoLinks) {
@@ -28,7 +28,7 @@ const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
             </S.Menu>
           </S.MenuContainer>
         </MediaQuery>
-        <MediaQuery minWidth={452}>
+        <MediaQuery minWidth={571}>
           <S.LogoCont onClick={() => router.push('/')}>
             <Logo width="85px" />
           </S.LogoCont>

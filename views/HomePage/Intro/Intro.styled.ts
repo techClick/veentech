@@ -3,19 +3,19 @@ import styled from 'styled-components';
 export const Container = styled.div`
   height: max-content;
   position: absolute;
-  bottom: 19vh;
+  bottom: 18vh;
   left: 0;
 `;
 
 export const IntroText = styled.div`
   font-weight: 600;
   margin-top: 300px;
-  width: 60vw;
+  width: 50vw;
   max-width: 830px;
   line-height: 1.4;
-  font-size: calc(5px + 2vw);
-  @media(max-width: 900px) {
-    font-size: calc(10px + 2vw);
+  font-size: calc(15px + 1vw);
+  @media(max-width: 1150px) {
+    // font-size: calc(12px + 2vw);
   }
   @media(max-width: 600px) {
     width: 70vw;

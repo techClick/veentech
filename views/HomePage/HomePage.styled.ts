@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import bgImage from 'assets/bg.jpg';
 import { contMaxWidth, contWidth, headerHeight, textColor } from 'styles/styled';
 
 export const MainContainer = styled.div`
+  background-attachment: fixed;
+  background-image: url(${bgImage.src});
+  background-position: 0px 0px;
+  background-repeat: repeat;
   min-width: 100vw;
   width: 100vw;
   min-height: 100vh;
@@ -21,7 +26,6 @@ export const BgImage = styled.img`
 
 export const Container = styled.div`
   height: calc(100vh - ${headerHeight});
-  width: max-content;
   position: relative;
   margin: auto;
   width: ${contWidth};
