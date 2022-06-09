@@ -7,12 +7,13 @@ import Intro from './Intro/Intro';
 const HomePage = function HomePage() {
   return (
     <S.MainContainer>
-      {/* <S.BgImage src={bgImage.src} /> */}
-      <Gradient />
-      <Header />
-      <S.Container>
-        <Intro />
-      </S.Container>
+      <S.BgContainer>
+        <Gradient />
+        <Header />
+        <S.Container>
+          <Intro />
+        </S.Container>
+      </S.BgContainer>
     </S.MainContainer>
   );
 };

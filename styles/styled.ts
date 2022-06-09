@@ -49,11 +49,11 @@ export const MainButton = styled.div`
   background: ${Color(buttonColor).lighten(0.27).toString()};
   padding: 10px 20px;
   border-radius: 20px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   width: max-content;
   height: max-content;
-  color: ${Color('white').darken(0.7).toString()};
+  color: ${Color('white').darken(0.8).toString()};
   cursor: pointer;
   &:hover {
     color: ${Color('white').darken(0.9).toString()};

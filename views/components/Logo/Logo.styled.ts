@@ -13,4 +13,5 @@ export const Image = styled.img`
 
 export const Label = styled.div`
   font-size: 18px;
+  font-weight: 300;
 `;

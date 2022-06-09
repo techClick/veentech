@@ -6,12 +6,18 @@ const Intro = function Intro() {
   return (
     <S.Container>
       <S.IntroText>
-        Optimize your business. Utilize the power of information
-        technology and watch your business thrive.
+        We optimize businesses.
+        <S.IntroText2>
+          Utilize the power information technology
+          has in making your business thrive.
+        </S.IntroText2>
       </S.IntroText>
       <S.ButtonDiv>
-        <MainButton>
+        <S.Button>
           Learn more
+        </S.Button>
+        <MainButton>
+          Grow my business
         </MainButton>
       </S.ButtonDiv>
     </S.Container>

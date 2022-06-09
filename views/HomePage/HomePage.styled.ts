@@ -3,15 +3,21 @@ import bgImage from 'assets/bg.jpg';
 import { contMaxWidth, contWidth, headerHeight, textColor } from 'styles/styled';
 
 export const MainContainer = styled.div`
-  background-attachment: fixed;
-  background-image: url(${bgImage.src});
-  background-position: 0px 0px;
-  background-repeat: repeat;
   min-width: 100vw;
   width: 100vw;
   min-height: 100vh;
   height: max-content;
   color: ${textColor};
+`;
+
+export const BgContainer = styled.div`
+  background-attachment: fixed;
+  background-image: url(${bgImage.src});
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  width: 100%;
+  min-height: 100%;
+  height: max-content;
 `;
 
 export const BgImage = styled.img`
