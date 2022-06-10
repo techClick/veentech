@@ -37,7 +37,7 @@ export const Menu = styled.div`
 export const LogoCont = styled.div`
   width: max-content;
   height: 100%;
-  margin-left: 8%;
+  margin-left: 5.75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ export const TabsContainer = styled.div`
 
 export const Tab = styled.div`
   margin-right: 55px;
-  font-size: 13.6px;
+  font-size: 15px;
   font-weight: 700;
   position: relative;
   padding: 5px 0px;

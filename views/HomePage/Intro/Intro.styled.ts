@@ -5,20 +5,16 @@ import { buttonColor } from 'styles/styled';
 export const Container = styled.div`
   height: max-content;
   position: absolute;
-  bottom: 18vh;
+  bottom: calc(25px + 5vw); //12vh; 
   left: 0;
 `;
 
 export const IntroText = styled.div`
   font-weight: 400;
-  margin-top: 300px;
   width: 50vw;
   max-width: 830px;
   line-height: 1.4;
   font-size: calc(17px + 1vw);
-  @media(max-width: 1150px) {
-    // font-size: calc(12px + 2vw);
-  }
   @media(max-width: 890px) {
     width: 70vw;
   }

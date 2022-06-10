@@ -2,9 +2,9 @@ import styled, { keyframes } from 'styled-components';
 import Color from 'color';
 
 export const bigRes = 699.99;
-export const contWidth = '85%';
-export const contMaxWidth = '1300px';
-export const headerHeight = '60px';
+export const contWidth = '90%';
+export const contMaxWidth = '1520px';
+export const headerHeight = '70px';
 export const headerColor = Color('white').darken(0.92).toString();
 export const blueColor = '#1685ec';
 export const baseColor = '#071542';
@@ -59,4 +59,22 @@ export const MainButton = styled.div`
     color: ${Color('white').darken(0.9).toString()};
     background: ${Color(buttonColor).darken(0.2).toString()};
   }
+`;
+
+export const Container = styled.div`
+  height: calc(100vh - ${headerHeight});
+  position: relative;
+  margin: auto;
+  width: ${contWidth};
+  max-width: ${contMaxWidth};
+  z-index: 1;
+`;
+
+export const ContainerMax = styled.div`
+  height: max-content;
+  position: relative;
+  margin: auto;
+  width: ${contWidth};
+  max-width: ${contMaxWidth};
+  z-index: 1;
 `;

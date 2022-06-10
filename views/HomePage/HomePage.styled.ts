@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import bgImage from 'assets/bg.jpg';
-import { contMaxWidth, contWidth, headerHeight, textColor } from 'styles/styled';
+import bgImage2 from 'assets/bg2.jpg';
+import bgImage3 from 'assets/bg3.jpg';
+import { headerColor, textColor } from 'styles/styled';
 
 export const MainContainer = styled.div`
   min-width: 100vw;
@@ -18,23 +20,12 @@ export const BgContainer = styled.div`
   width: 100%;
   min-height: 100%;
   height: max-content;
+  margin-top: -1px;
 `;
 
-export const BgImage = styled.img`
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 1290px;
-  width: 98.9vw;
-  height: auto;
-  z-index: 0;
-`;
-
-export const Container = styled.div`
-  height: calc(100vh - ${headerHeight});
-  position: relative;
-  margin: auto;
-  width: ${contWidth};
-  max-width: ${contMaxWidth};
-  z-index: 1;
+export const BgContainer2 = styled.div`
+  background: ${headerColor};
+  width: 100%;
+  height: max-content;
+  margin-top: -1px;
 `;
