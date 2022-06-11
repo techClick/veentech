@@ -4,7 +4,8 @@ import { buttonColor, headerColor, textColor, textColor2 } from 'styles/styled';
 
 export const MainContainer = styled.div`
   width: 100%;
-  padding-top: 25px;
+  padding-top: 45px;
+  padding-bottom: 20px;
 `;
 
 const optionsColor = Color(headerColor).lighten(0.4).toString();

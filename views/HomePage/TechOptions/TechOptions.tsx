@@ -21,19 +21,29 @@ const TechOptions = function TechOptions() {
       Be ever close to your consumers and effiecient in your operations.`,
     icon: faMobileScreen,
   }, {
-    name: 'Database Warehouse',
+    name: 'Database Warehousing',
     description: `Acquire a repository for your data and information. Access to this database
       can be granted to your clients or employees.`,
     icon: faServer,
   }, {
-    name: 'Digital Advertising',
-    description: `Take advantage of tools like Facebook, YouTube and Google Adwords
-      and grow your consumer base.`,
-    icon: faEye,
-  }, {
     name: 'Business Email',
     description: `Standout and have a private and personalized company email address,
       which will be used by you and your employees.`,
+    icon: faEnvelope,
+  }, {
+    name: 'Digital Advertising',
+    description: `Take advantage of tools like Google, Facebook and YouTube Ads
+      and grow your consumer base.`,
+    icon: faEye,
+  }, {
+    name: 'Data Analytics',
+    description: `Utlizie software tools like Python, Excel and Power BI to
+      visualize data and analyze your business.`,
+    icon: faEnvelope,
+  }, {
+    name: 'Video Advertising',
+    description: `Take advantage of tools like iMovie and Final Cut Pro.
+      Create attractive and informative videos that grow your consumer base via YouTube.`,
     icon: faEnvelope,
   }];
 

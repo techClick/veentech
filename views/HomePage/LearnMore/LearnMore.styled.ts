@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { headerColor, textColor2 } from 'styles/styled';
+import { headerColor, textColor, textColor2 } from 'styles/styled';
 
 export const MainContainer = styled.div`
   width: 100%;  
@@ -8,17 +8,16 @@ export const MainContainer = styled.div`
 
 export const DarkContainer = styled.div`
   width: 100%;
-  padding-top: 60px;
+  padding-top: 40px;
   position: relative;
   background: ${headerColor};
 `;
 
 export const Header = styled.div`
   font-weight: 400;
-  width: 70vw;
-  // max-width: 950px;
+  width: 45vw;
   line-height: 1.5;
-  font-size: calc(18px + 0.5vw);
+  font-size: calc(16px + 0.5vw);
   font-family: Poppins;
   @media(max-width: 890px) {
     width: 80vw;
@@ -27,13 +26,22 @@ export const Header = styled.div`
 
 export const Header2 = styled.div`
   font-weight: 300;
-  width: 50vw;
+  width: 45vw;
   max-width: 830px;
   line-height: 1.3;
-  font-size: calc(13px + 0.35vw);
+  font-size: calc(16px + 0.25vw);
   margin-top: 15px;
   color: ${textColor2};
   @media(max-width: 890px) {
     width: 70vw;
+  }
+`;
+
+export const WhitePart = styled.span`
+  color: ${textColor};
+  text-decoration: underline solid ${textColor} 1px;
+  cursor: pointer;
+  &:hover {
+    color: white;
   }
 `;

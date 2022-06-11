@@ -11,9 +11,10 @@ export const baseColor = '#071542';
 export const greyColor = '#c9c9c9';
 export const buttonColor = '#3795E0';
 export const orange = Color('#DC4D18').darken(0.05).toString();
-export const textColor = Color('white').darken(0.1).toString();
+export const textColor = Color('white').darken(0.215).toString();
 export const textColor2 = Color('white').darken(0.35).toString();
-export const textColor3 = Color('#AFB5CA').darken(0.6).toString();
+export const textColor3 = Color('white').darken(0.1).toString();
+export const columnRes_HPConsult = '702px';
 
 const opacityIn = keyframes`
   0% {
@@ -62,7 +63,7 @@ export const MainButton = styled.div`
 `;
 
 export const Container = styled.div`
-  height: calc(100vh - ${headerHeight});
+  height: calc(95vh - ${headerHeight});
   position: relative;
   margin: auto;
   width: ${contWidth};

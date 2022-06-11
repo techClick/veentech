@@ -8,13 +8,15 @@ const LearnMore = function LearnMore() {
       <S.DarkContainer>
         <ContainerMax>
           <S.Header>
-            We help businesses achieve more by
-            deploying a variety of I.T infrastructures.
+            Let us enhance your business with Tech.
           </S.Header>
           <S.Header2>
-            Below are I.T options we use to optimize and grow businesses today.
-            If you are not sure of which option you need, our
-            team of consultants can help.
+            Below are I.T infrastructures we use to optimize and grow businesses.
+            If you are not sure about which of these your business needs, our
+            team of consultants can
+            {' '}
+            <S.WhitePart>help</S.WhitePart>
+            .
           </S.Header2>
         </ContainerMax>
       </S.DarkContainer>
