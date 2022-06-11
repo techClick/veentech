@@ -27,6 +27,6 @@ export const tabs = [{
   name: 'About',
   action: () => document.getElementById('meetUs')?.scrollIntoView({ behavior: 'smooth' }),
 }, {
-  name: 'Contact',
+  name: 'For Businesses',
   action: () => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' }),
 }];

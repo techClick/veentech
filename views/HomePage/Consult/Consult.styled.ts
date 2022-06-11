@@ -12,6 +12,7 @@ export const Container = styled.div`
   width: 100%;
   height: max-content;
   padding-top: 280px;
+  overflow: hidden;
 `;
 
 export const Container2 = styled.div`

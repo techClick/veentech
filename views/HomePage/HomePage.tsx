@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from 'views/components/Header/Header';
+import Footer from 'views/components/Footer/Footer';
 import LearnMore from './LearnMore/LearnMore';
 import * as S from './HomePage.styled';
 import Intro from './Intro/Intro';
@@ -20,6 +21,7 @@ const HomePage = function HomePage() {
       <S.BgContainer3>
         <Consult />
       </S.BgContainer3>
+      <Footer />
     </S.MainContainer>
   );
 };

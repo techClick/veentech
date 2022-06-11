@@ -10,8 +10,9 @@ const Experience = function Experience() {
           <S.Plus>+</S.Plus>
         </S.Exp>
         <S.ExpDesc>
-          Years in
-          Tech
+          Years
+          <br />
+          in Tech
         </S.ExpDesc>
       </S.ExpCont>
       <S.Slash>|</S.Slash>

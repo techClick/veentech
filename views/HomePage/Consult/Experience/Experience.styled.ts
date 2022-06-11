@@ -7,7 +7,6 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   z-index: 2;
-  padding: 0 60px;
 `;
 
 export const ExpCont = styled.div`
@@ -15,7 +14,6 @@ export const ExpCont = styled.div`
 `;
 
 export const Exp = styled.div`
-  // font-family: Poppins;
   font-size: calc(20px + 2vw);
   font-weight: 500;
   display: inline-flex;
@@ -38,7 +36,7 @@ export const Slash = styled.div`
   font-size: calc(125px + 1vw);
   font-weight: 100;
   margin: 0px 2vw;
-  margin-top: -20px;
+  margin-top: -25px;
   color: ${Color('white').darken(0.85).toString()};
 `;
 
