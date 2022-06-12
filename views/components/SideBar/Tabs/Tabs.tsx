@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RelativeContainer } from 'views/styles';
+import { RelativeContainer } from 'styles/styled';
 import { moveSideBar, tabs } from 'views/components/Header/utils/utils';
 import * as S from './Tabs.styled';
 
@@ -15,7 +15,6 @@ const Tabs = function Tabs() {
             isSelected={i === selectedTab}
             onClick={() => {
               setSelectedTab(i);
-              tab.action();
               setTimeout(() => {
                 moveSideBar(true);
                 setSelectedTab(null);

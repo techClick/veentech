@@ -1,6 +1,6 @@
 import Color from 'color';
 import styled from 'styled-components';
-import { sideBarColor, textColor, headerColor } from 'views/styles';
+import { headerColor, sideBarColor, textColor } from 'styles/styled';
 
 export const BottomTab = styled.div<any>`
   width: max-content;
