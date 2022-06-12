@@ -47,7 +47,7 @@ export const LeftSection = styled.div`
   align-items: center;
   position: relative;
   z-index: 2;
-  border-right: 2px solid ${Color(headerColor).darken(0.6).toString()};
+  border-right: 2px solid ${Color(headerColor).darken(0).toString()};
   @media(max-width: ${columnRes_HPConsult}) {
     width: 100%;
     height: max-content;
