@@ -1,23 +1,23 @@
 import styled from 'styled-components';
 import { headerColor } from 'styles/styled';
 
-export const GradientDiv = styled.div`
+export const GradientDiv = styled.div<any>`
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 78vh;
+  height: ${(props) => props.height1 || '78vh'};
   z-index: 0.1;
   background: linear-gradient(transparent, ${headerColor});
   min-width: 1290px;
 `;
 
-export const Bg = styled.div`
+export const Bg = styled.div<any>`
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 22vh;
+  height: ${(props) => props.height2 || '22vh'};
   z-index: 0.1;
   min-width: 1290px;
   background: ${headerColor};

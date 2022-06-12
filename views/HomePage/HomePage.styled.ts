@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import bgImage from 'assets/bg.jpg';
-// import bgImage2 from 'assets/bg2.jpg';
 import bgImage3 from 'assets/bg3.jpg';
 import { headerColor, textColor } from 'styles/styled';
 
@@ -38,8 +37,7 @@ export const BgContainer3 = styled.div`
   min-height: 100%;
   height: max-content;
   margin-top: -1px;
-  box-shadow: //inset 0 200px 50px -50px ${headerColor},
-    inset 0 -200px 50px -50px ${headerColor};
-  /* box-shadow: inset 0 50px 50px 50px ${headerColor},
-    inset 0 -50px 50px 50px ${headerColor}; */
+  box-shadow: inset 0 -200px 50px -50px ${headerColor};
+  @media (max-width: 480px) {
+  }
 `;

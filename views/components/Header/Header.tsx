@@ -37,12 +37,7 @@ const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
               !isNoLinks && tabs.map((tab, i) => (
                 <S.Tab
                   key={`tab_${i}`}
-                  onMouseOver={() => {
-                    const newTabActive = [...tabActive];
-                    newTabActive[i] = true;
-                    // setTabActive(newTabActive);
-                  }}
-                  onClick={() => tab.action()}
+                  onClick={() => router.push(tab.path)}
                 >
                   {tab.name}
                   <S.Underline

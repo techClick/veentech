@@ -69,6 +69,7 @@ export const Container = styled.div`
   width: ${contWidth};
   max-width: ${contMaxWidth};
   z-index: 1;
+  color: ${textColor};
 `;
 
 export const ContainerMax = styled.div`
@@ -78,4 +79,5 @@ export const ContainerMax = styled.div`
   width: ${contWidth};
   max-width: ${contMaxWidth};
   z-index: 1;
+  color: ${textColor};
 `;

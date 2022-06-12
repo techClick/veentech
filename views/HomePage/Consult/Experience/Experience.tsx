@@ -6,13 +6,13 @@ const Experience = function Experience() {
     <S.Container>
       <S.ExpCont>
         <S.Exp>
-          41
+          42
           <S.Plus>+</S.Plus>
         </S.Exp>
         <S.ExpDesc>
-          Years
+          Years in
           <br />
-          in Tech
+          Tech
         </S.ExpDesc>
       </S.ExpCont>
       <S.Slash>|</S.Slash>

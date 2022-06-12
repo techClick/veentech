@@ -25,8 +25,11 @@ export const moveSideBar = function moveSideBar(removeOnly: boolean) {
 
 export const tabs = [{
   name: 'About',
-  action: () => document.getElementById('meetUs')?.scrollIntoView({ behavior: 'smooth' }),
+  path: '/about',
 }, {
   name: 'For Businesses',
-  action: () => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' }),
+  path: '/',
+}, {
+  name: 'Contact',
+  path: '/contact',
 }];

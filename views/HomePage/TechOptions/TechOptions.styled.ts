@@ -41,7 +41,7 @@ export const TechOption = styled.div`
 
 const pad = '33px';
 export const OptionName = styled.div`
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(9px + 0.5vw);
   font-weight: 500;
   padding: 25px ${pad};
   border-bottom: 1px solid ${Color(textColor).darken(0.7).toString()};
@@ -78,7 +78,7 @@ export const Icon2 = styled.div`
 `;
 
 export const Description = styled.div`
-  font-size: calc(14px + 0.25vw);
+  font-size: calc(12.25px + 0.25vw);
   font-weight: 300;
   line-height: 1.3;
   padding: 23px ${pad};

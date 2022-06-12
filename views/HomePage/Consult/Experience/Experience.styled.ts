@@ -14,26 +14,26 @@ export const ExpCont = styled.div`
 `;
 
 export const Exp = styled.div`
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
   font-weight: 500;
   display: inline-flex;
   align-items: center;
 `;
 
 export const Plus = styled.span`
-  font-size: calc(20px + 1vw);
+  font-size: calc(18px + 1vw);
   font-weight: 500;
 `;
 
 export const ExpDesc = styled.div`
-  font-size: calc(15px + 0.25vw);
+  font-size: calc(13px + 0.25vw);
   color: ${textColor2};
   font-weight: 300;
   margin-top: -3px;
 `;
 
 export const Slash = styled.div`
-  font-size: calc(125px + 1vw);
+  font-size: calc(122px + 1vw);
   font-weight: 100;
   margin: 0px 2vw;
   margin-top: -25px;

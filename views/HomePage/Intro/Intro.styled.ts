@@ -5,7 +5,7 @@ import { buttonColor, textColor3 } from 'styles/styled';
 export const Container = styled.div`
   height: max-content;
   position: absolute;
-  bottom: calc(-30px + 5vw); //12vh; 
+  bottom: calc(-30px + 5vw); 
   left: 0;
 `;
 
@@ -14,7 +14,7 @@ export const IntroText = styled.div`
   width: 50vw;
   max-width: 830px;
   line-height: 1.4;
-  font-size: calc(17px + 1vw);
+  font-size: calc(15px + 1vw);
   color: ${textColor3};
   @media(max-width: 890px) {
     width: 70vw;
@@ -23,7 +23,7 @@ export const IntroText = styled.div`
 
 export const IntroText2 = styled.div`
   font-weight: 300;
-  font-size: calc(19.5px + 0.5vw);
+  font-size: calc(17.5px + 0.5vw);
   margin-top: 5px;
   color: ${textColor3};
 `;

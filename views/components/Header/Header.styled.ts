@@ -58,7 +58,7 @@ export const TabsContainer = styled.div`
 
 export const Tab = styled.div`
   margin-right: 55px;
-  font-size: 15px;
+  font-size: 13.75px;
   font-weight: 700;
   position: relative;
   padding: 5px 0px;

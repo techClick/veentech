@@ -64,14 +64,14 @@ export const TextPart = styled.div`
 `;
 
 export const TopText = styled.div`
-  font-size: calc(22px + 1vw);
+  font-size: calc(20px + 1vw);
   font-weight: 500;
   line-height: 1;
   font-family: Poppins;
 `;
 
 export const Text = styled.div`
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   font-weight: 300;
   line-height: 1.4;
   margin: auto;
@@ -132,7 +132,7 @@ export const TransparentBG2 = styled.div`
   left: 0;
   top: 0;
   background: ${Color(headerColor).darken(0.55).toString()};
-  opacity: 0.5;
+  opacity: 0.25;
   border-radius: 5px;
-  box-shadow: -200px 0px 200px -10px black;
+  // box-shadow: -200px 0px 200px -10px black;
 `;

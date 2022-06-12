@@ -8,6 +8,7 @@ const StorageSync = function StorageSync({ children }:{ children: any }) {
 
   useEffect(() => {
     dispatch(setHasSyncedWithStorage(true));
+    (document.body.style as any).zoom = '100%';
   }, []);
 
   return (

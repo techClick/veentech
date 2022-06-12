@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, MainButton } from 'styles/styled';
-import Gradient from './Gradient/Gradient';
+import Gradient from '../../components/Gradient/Gradient';
 import * as S from './Intro.styled';
 
 const Intro = function Intro() {
