@@ -47,7 +47,7 @@ export const LeftSection = styled.div`
   align-items: center;
   position: relative;
   z-index: 2;
-  border-right: 2px solid ${Color(headerColor).darken(0).toString()};
+  // border-right: 2px solid ${Color(headerColor).darken(0.1).toString()};
   @media(max-width: ${columnRes_HPConsult}) {
     width: 100%;
     height: max-content;
@@ -134,5 +134,4 @@ export const TransparentBG2 = styled.div`
   background: ${Color(headerColor).darken(0.55).toString()};
   opacity: 0.25;
   border-radius: 5px;
-  // box-shadow: -200px 0px 200px -10px black;
 `;

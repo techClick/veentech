@@ -14,11 +14,13 @@ export const MainContainer = styled.div`
 export const BgContainer = styled.div`
   background-attachment: fixed;
   background-image: url(${bgImage.src});
-  background-position: 0px 0px;
   background-repeat: repeat;
   width: 100%;
   height: 100%;
   margin-top: -1px;
+  @media (max-width: 480px) {
+    background-position: left bottom;
+  }
 `;
 
 export const BgContainer2 = styled.div`
@@ -31,13 +33,14 @@ export const BgContainer2 = styled.div`
 export const BgContainer3 = styled.div`
   background-attachment: fixed;
   background-image: url(${bgImage3.src});
-  background-position: 0px 0px;
   background-repeat: repeat;
   width: 100%;
   min-height: 100%;
   height: max-content;
   margin-top: -1px;
-  box-shadow: inset 0 -200px 50px -50px ${headerColor};
-  @media (max-width: 480px) {
+  box-shadow: inset 0 -300px 50px -50px ${headerColor};
+  @media (max-width: 565px) {
+    background-position: center top;
+    box-shadow: inset 0 -380px 50px -50px ${headerColor};
   }
 `;
