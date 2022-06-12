@@ -1,9 +1,9 @@
 import Color from 'color';
 import styled from 'styled-components';
-import { sideBarColor } from 'views/styles';
+import { greyColor } from 'styles/styled';
 
 export const Container = styled.div`
-  background: ${sideBarColor};
+  background: ${greyColor};
   width: max-content;
   height: 100%;
   padding: 12px 10px;
@@ -19,7 +19,7 @@ export const LogoCont = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  background: ${Color(sideBarColor).darken(0.2).toString()};
+  background: ${Color(greyColor).darken(0.2).toString()};
   display: flex;
   justify-content: center;
   align-items: center;
