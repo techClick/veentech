@@ -1,6 +1,6 @@
 import Color from 'color';
 import styled from 'styled-components';
-import { headerColor, textColor2 } from 'styles/styled';
+import { headerColor, textColor, textColor2, textColor4 } from 'styles/styled';
 import { optionsColor } from 'views/HomePage/TechOptions/TechOptions.styled';
 
 export const Container = styled.div`
@@ -18,25 +18,27 @@ export const Label = styled.div`
   font-size: calc(14px + 0.35vw);
   font-family: Poppins;
   padding: 11px 25px;
-  border-radius: 3px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  border-radius: 2px;
   width: max-content;
-  background: ${Color(textColor2).darken(0.5).toString()};
-  color: ${Color('white').darken(0.915).toString()};
+  color: ${textColor4};
   margin-top: 55px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid ${textColor};
   @media(max-width: 890px) {
     max-width: 80vw;
   }
 `;
 
 export const Label2 = styled.div`
-  font-weight: 400;
+  font-weight: 300;
   max-width: 100%;
   width: max-content;
   line-height: 1.3;
-  font-size: calc(12px + 0.275vw);
+  font-size: calc(11px + 0.275vw);
   font-family: Lato;
-  color: ${Color('white').darken(0.935).toString()};
+  color: ${textColor2};
 `;
 
 export const AssureCont = styled.div`

@@ -1,6 +1,5 @@
-import Color from 'color';
 import styled from 'styled-components';
-import { headerColor, textColor2 } from 'styles/styled';
+import { headerColor, textColor, textColor2 } from 'styles/styled';
 
 export const MainContainer = styled.div`
   width: 100%;  
@@ -21,18 +20,21 @@ export const Header = styled.div`
   font-size: calc(14px + 0.35vw);
   font-family: Poppins;
   padding: 14px 25px;
-  border-radius: 3px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  border-bottom:
+  border-radius: 6px;
   width: max-content;
-  background: ${Color(textColor2).darken(0.5).toString()};
-  color: ${Color('white').darken(0.915).toString()};
+  border-bottom: 1px solid ${textColor};
 `;
 
 export const Label = styled.div`
-  font-weight: 400;
+  font-weight: 300;
   max-width: 100%;
   width: max-content;
   line-height: 1.3;
-  font-size: calc(12px + 0.275vw);
+  font-size: calc(11px + 0.275vw);
   font-family: Lato;
-  color: ${Color('white').darken(0.935).toString()};
+  color: ${textColor2};
+  margin-top: 2px;
 `;

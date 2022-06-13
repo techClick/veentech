@@ -26,6 +26,7 @@ function Footer() {
                     <S.Label>FOR BUSINESSES</S.Label>
                     <S.Link>Automation</S.Link>
                     <S.Link>Business Website</S.Link>
+                    <S.Link>Custom Mobile App</S.Link>
                     <S.Link>Database Warehousing</S.Link>
                     <S.aLink>Business Email</S.aLink>
                     <S.aLink>Digital Advertising</S.aLink>
@@ -56,6 +57,7 @@ function Footer() {
             <S.Label>FOR BUSINESSES</S.Label>
             <S.Link>Automation</S.Link>
             <S.Link>Business Website</S.Link>
+            <S.Link>Custom Mobile App</S.Link>
             <S.Link>Database Warehousing</S.Link>
             <S.aLink>Business Email</S.aLink>
             <S.aLink>Digital Advertising</S.aLink>

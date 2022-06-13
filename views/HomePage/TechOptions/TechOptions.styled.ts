@@ -197,7 +197,7 @@ export const PriceButton = styled.div`
   font-size: 14px;
   width: max-content;
   height: max-content;
-  background: ${Color(buttonColor).lighten(0.45).toString()};
+  background: ${Color(buttonColor).lighten(0.35).toString()};
   cursor: pointer;
   color: ${Color(optionsColor).lighten(0.3).toString()};
   &:hover {
