@@ -7,17 +7,17 @@ import * as S from './HowWeWork.styled';
 const HowWeWork = function HowWeWork() {
   const assurances = [{
     name: 'Results',
-    description: `We assure you increased business efficiency
+    description: `We assure you increase in business efficiency
       and consumer interactions.`,
     icon: faClipboardCheck,
   }, {
     name: 'Quality',
     description: `We are broiled industry professionals.
-      We assure a top standard service.`,
+      We assure top standard service.`,
     icon: faUserCheck,
   }, {
     name: 'Speed',
-    description: `We have resources for new projects.
+    description: `We have standby resources for new projects.
       We assure speedy deployments.`,
     icon: faClock,
   }, {
@@ -30,7 +30,12 @@ const HowWeWork = function HowWeWork() {
   return (
     <S.Container>
       <ContainerMax>
-        <S.Label>Our assurance</S.Label>
+        <S.Label>
+          WHAT TO EXPECT
+          <S.Label2>
+            From our service
+          </S.Label2>
+        </S.Label>
         <S.AssureCont>
           {
             assurances.map((assurance) => (

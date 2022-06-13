@@ -131,7 +131,7 @@ export const TransparentBG2 = styled.div`
   z-index: 0;
   left: 0;
   top: 0;
-  background: ${Color(headerColor).darken(0.55).toString()};
+  background: ${Color(headerColor).darken(0.15).toString()};
   opacity: 0.25;
   border-radius: 5px;
 `;

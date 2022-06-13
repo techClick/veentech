@@ -1,37 +1,58 @@
 import Color from 'color';
 import styled from 'styled-components';
-import { headerColor, textColor2, textColor4 } from 'styles/styled';
+import { headerColor, textColor2 } from 'styles/styled';
 import { optionsColor } from 'views/HomePage/TechOptions/TechOptions.styled';
 
 export const Container = styled.div`
   background: ${headerColor};
   width: 100%;
   height: max-content;
-  padding: 25px 0;
-  padding-bottom: 20px;
-  color: ${textColor4};
+  padding-top: 10px;
+  padding-bottom: 15px;
 `;
 
 export const Label = styled.div`
-  font-size: calc(16px + 1.5vw);
-  font-weight: 500;
+  font-weight: 800;
+  max-width: 100%;
+  line-height: 1.5;
+  font-size: calc(14px + 0.35vw);
+  font-family: Poppins;
+  padding: 11px 25px;
+  border-radius: 3px;
+  width: max-content;
+  background: ${Color(textColor2).darken(0.5).toString()};
+  color: ${Color('white').darken(0.915).toString()};
+  margin-top: 55px;
+  margin-bottom: 15px;
+  @media(max-width: 890px) {
+    max-width: 80vw;
+  }
+`;
+
+export const Label2 = styled.div`
+  font-weight: 400;
+  max-width: 100%;
+  width: max-content;
+  line-height: 1.3;
+  font-size: calc(12px + 0.275vw);
+  font-family: Lato;
+  color: ${Color('white').darken(0.935).toString()};
 `;
 
 export const AssureCont = styled.div`
-  margin-top: 25px;
+  margin-top: 2px;
   width: 100%;
   height: max-content;
 `;
 
-const borderColor = Color(optionsColor).lighten(2.7).toString();
+const borderColor = Color(optionsColor).lighten(2.2).toString();
 const setOfTwoRes = '1157px';
 const setOfOneRes = '555px';
 export const Assurance = styled.div`
-  border-radius: 35px;
-  border: 2px solid ${borderColor};
+  border-radius: 15px;
+  border: 1px solid ${borderColor};
   padding: 25px;
   padding-bottom: 35px;
-  // color: ${borderColor};
   width: calc((100% - 60px) / 4);
   margin-right: 15px;
   height: calc(190px + 6vw);
@@ -55,18 +76,20 @@ export const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: auto;
+  color: ${Color(textColor2).darken(0.45).toString()};
 `;
 
 export const Icon = styled.div`
-  transform: scale(0.85);
+  transform: scale(0.6);
 `;
 
 export const Name = styled.div`
   font-size: calc(10px + 0.5vw);
   font-weight: 500;
   margin: auto;
-  margin-top: 5px;
+  margin-top: -2px;
   width: max-content;
+  color: ${Color(textColor2).darken(0).toString()};
   @media(max-width: ${setOfTwoRes}) {
     font-size: calc(12.5px + 0.5vw);
   }
@@ -84,6 +107,7 @@ export const Desc = styled.div`
   width: 70%;
   text-align: center;
   color: ${textColor2};
+  line-height: 1.4;
   @media(max-width: ${setOfTwoRes}) {
     margin-top: 5%;
     font-size: calc(11.25px + 0.325vw);

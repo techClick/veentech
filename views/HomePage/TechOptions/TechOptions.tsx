@@ -79,6 +79,21 @@ const TechOptions = function TechOptions() {
             </S.TechOption>
           ))
         }
+        <S.Help>
+          If you are not sure about which service your business needs, our
+          team of consultants can
+          {' '}
+          <S.WhitePart>help</S.WhitePart>
+          .
+        </S.Help>
+        <S.PricesCont>
+          <S.PricesDesc>Wonder about the cost of our services?</S.PricesDesc>
+          <S.PriceBtnDiv>
+            <S.PriceButton>
+              Explore prices
+            </S.PriceButton>
+          </S.PriceBtnDiv>
+        </S.PricesCont>
       </ContainerMax>
     </S.MainContainer>
   );

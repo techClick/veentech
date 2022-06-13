@@ -19,7 +19,7 @@ const AboutIntro = function AboutIntro() {
             since 2011.
           </S.Label2>
           <S.Label3>
-            Professionally, our team have first-hand experience with information technology
+            Professionally, our team have first-hand experience in information technology
             and it&apos;s power to increase business efficiency and drive success.
             Our mission is to help businesses benefit from this power.
           </S.Label3>

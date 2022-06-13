@@ -4,11 +4,11 @@ import { buttonColor, headerColor, textColor, textColor2 } from 'styles/styled';
 
 export const MainContainer = styled.div`
   width: 100%;
-  padding-top: 45px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 `;
 
-export const optionsColor = Color(headerColor).lighten(0.4).toString();
+export const optionsColor = Color(headerColor).lighten(0.6).toString();
 const oneOptionRes = '433px';
 export const TechOption = styled.div`
   background: linear-gradient(${optionsColor}, ${Color(optionsColor).darken(0.1).toString()});
@@ -147,4 +147,65 @@ export const MainButton = styled.div`
     color: ${Color('white').darken(0.9).toString()};
     background: ${Color(buttonColor).lighten(0).toString()};
   }
+`;
+
+export const Help = styled.div`
+  font-weight: 300;
+  max-width: 100%;
+  width: max-content;
+  line-height: 1.3;
+  font-size: calc(14.8px + 0.15vw);
+  color: ${textColor2};
+  background: ${optionsColor};
+  padding: 21px 30px;
+  margin-bottom: 25px;
+`;
+
+export const WhitePart = styled.span`
+  color: ${textColor};
+  text-decoration: underline solid ${textColor} 1px;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+`;
+
+export const PricesCont = styled.div`
+  background: ${optionsColor};
+  padding: 25px 30px;
+  border-radius: 8px;
+  width: max-content;
+  max-width: 100%;
+`;
+
+export const PricesDesc = styled.div`
+  font-size: calc(11px + 0.25);
+  font-weight: 300;
+  color: ${textColor2};
+`;
+
+export const PriceBtnDiv = styled.div`
+  margin-top: 30px;
+  width: max-content;
+`;
+
+export const PriceButton = styled.div`
+  color: white;
+  padding: 9px 20px;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  width: max-content;
+  height: max-content;
+  background: ${Color(buttonColor).lighten(0.45).toString()};
+  cursor: pointer;
+  color: ${Color(optionsColor).lighten(0.3).toString()};
+  &:hover {
+    color: ${Color('white').darken(0.9).toString()};
+    background: ${Color(buttonColor).lighten(0).toString()};
+  }
+`;
+
+export const Transparent = styled.span`
+  opacity: 0.9;
 `;

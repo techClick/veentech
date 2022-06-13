@@ -1,5 +1,6 @@
+import Color from 'color';
 import styled from 'styled-components';
-import { headerColor, textColor, textColor2 } from 'styles/styled';
+import { headerColor, textColor2 } from 'styles/styled';
 
 export const MainContainer = styled.div`
   width: 100%;  
@@ -14,34 +15,24 @@ export const DarkContainer = styled.div`
 `;
 
 export const Header = styled.div`
-  font-weight: 400;
-  width: 45vw;
+  font-weight: 800;
+  max-width: 100%;
   line-height: 1.5;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(14px + 0.35vw);
   font-family: Poppins;
-  @media(max-width: 890px) {
-    width: 80vw;
-  }
+  padding: 14px 25px;
+  border-radius: 3px;
+  width: max-content;
+  background: ${Color(textColor2).darken(0.5).toString()};
+  color: ${Color('white').darken(0.915).toString()};
 `;
 
-export const Header2 = styled.div`
-  font-weight: 300;
-  width: 45vw;
-  max-width: 830px;
+export const Label = styled.div`
+  font-weight: 400;
+  max-width: 100%;
+  width: max-content;
   line-height: 1.3;
-  font-size: calc(14px + 0.25vw);
-  margin-top: 13px;
-  color: ${textColor2};
-  @media(max-width: 890px) {
-    width: 70vw;
-  }
-`;
-
-export const WhitePart = styled.span`
-  color: ${textColor};
-  text-decoration: underline solid ${textColor} 1px;
-  cursor: pointer;
-  &:hover {
-    color: white;
-  }
+  font-size: calc(12px + 0.275vw);
+  font-family: Lato;
+  color: ${Color('white').darken(0.935).toString()};
 `;
