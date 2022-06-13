@@ -14,6 +14,7 @@ export const orange = Color('#DC4D18').darken(0.05).toString();
 export const textColor = Color('white').darken(0.215).toString();
 export const textColor2 = Color('white').darken(0.35).toString();
 export const textColor3 = Color('white').darken(0.1).toString();
+export const textColor4 = Color('white').darken(0.275).toString();
 export const columnRes_HPConsult = '702px';
 
 const opacityIn = keyframes`

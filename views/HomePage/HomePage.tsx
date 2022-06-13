@@ -5,7 +5,7 @@ import LearnMore from './LearnMore/LearnMore';
 import * as S from './HomePage.styled';
 import Intro from './Intro/Intro';
 import TechOptions from './TechOptions/TechOptions';
-import Consult from './Consult/Consult';
+import Consult from '../components/Consult/Consult';
 
 const HomePage = function HomePage() {
   return (

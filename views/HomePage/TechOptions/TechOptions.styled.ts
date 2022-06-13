@@ -8,7 +8,7 @@ export const MainContainer = styled.div`
   padding-bottom: 20px;
 `;
 
-const optionsColor = Color(headerColor).lighten(0.4).toString();
+export const optionsColor = Color(headerColor).lighten(0.4).toString();
 const oneOptionRes = '433px';
 export const TechOption = styled.div`
   background: linear-gradient(${optionsColor}, ${Color(optionsColor).darken(0.1).toString()});
@@ -22,13 +22,12 @@ export const TechOption = styled.div`
   vertical-align: top;
   border-radius: 8px;
   border: 1px solid ${Color(headerColor).darken(0.1).toString()};
-  // border: 1px solid ${Color(optionsColor).darken(0.2).toString()};
   position: relative;
   @media(max-width: 1100px) {
     width: calc(((100% - 50px) / 2));
   }
   @media(max-width: 733px) {
-    width: 100%; // calc(100% - 15px);
+    width: 100%;
     margin-right: 0;
     min-width: 0;
     height: 250px;
