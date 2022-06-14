@@ -7,7 +7,7 @@ import * as S from './Contact.styled';
 import { all_lowRes } from './Contact.styled';
 
 const Contact = function Contact() {
-  const placeHolders = ['Company / Name *', 'Email *', 'Subject(Optional)', 'Enter message *'];
+  const placeHolders = ['Company / Name *', 'Email *', 'Subject (Optional)', 'Enter message *'];
   const [input, setInput] = useState<any>(placeHolders.map(() => ''));
 
   return (

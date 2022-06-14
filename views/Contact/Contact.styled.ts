@@ -53,6 +53,10 @@ export const LabelContainer = styled.div`
 
 export const LabelCont = styled.div`
   max-width: 100%;
+  margin-top: -90px;
+  @media(max-width: ${all_lowRes}) {
+    margin-top: 0px;
+  }
 `;
 
 export const Label = styled.div`

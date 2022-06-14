@@ -47,7 +47,6 @@ const TechOptions = function TechOptions() {
     icon: faEnvelope,
   }];
 
-  // Explore prices
   return (
     <S.MainContainer>
       <ContainerMax>

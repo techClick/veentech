@@ -37,7 +37,9 @@ const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
               !isNoLinks && tabs.map((tab, i) => (
                 <S.Tab
                   key={`tab_${i}`}
-                  onClick={() => router.push(tab.path)}
+                  onClick={() => {
+                    if (tab.action()) router.push(tab.path);
+                  }}
                 >
                   {tab.name}
                   <S.Underline

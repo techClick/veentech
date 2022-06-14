@@ -26,10 +26,20 @@ export const moveSideBar = function moveSideBar(removeOnly: boolean) {
 export const tabs = [{
   name: 'About',
   path: '/about',
+  action: () => true,
 }, {
   name: 'For Businesses',
-  path: '/',
+  path: '/?ref=1',
+  action: () => {
+    const page = window.location.pathname.split('/').pop();
+    if (page === '') {
+      document.getElementById('learnMore')?.scrollIntoView({ behavior: 'smooth' });
+      return false;
+    }
+    return true;
+  },
 }, {
   name: 'Contact',
   path: '/contact',
+  action: () => true,
 }];

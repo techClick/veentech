@@ -4,7 +4,7 @@ import * as S from './LearnMore.styled';
 
 const LearnMore = function LearnMore() {
   return (
-    <S.MainContainer>
+    <S.MainContainer id="learnMore">
       <S.DarkContainer>
         <ContainerMax>
           <S.Header>
