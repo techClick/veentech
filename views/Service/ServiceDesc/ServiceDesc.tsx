@@ -4,12 +4,12 @@ import { servicesImgs } from '../utils/utils';
 import * as S from './ServiceDesc.styled';
 
 const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
-  const serviceImgs = servicesImgs[service];
+  const serviceImgs = servicesImgs[service.name];
 
   return (
     <>
       <S.ServiceName>
-        {service.toUpperCase()}
+        {service.name.toUpperCase()}
       </S.ServiceName>
       <S.DetailsCont>
         <S.LogosCont>
