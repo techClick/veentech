@@ -45,7 +45,7 @@ export const LabelContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gr${Color(headerColor).darken(0.175).toString()};
+  // background: ${Color(headerColor).darken(0.175).toString()};
   background: linear-gradient(${Color(headerColor).darken(0).toString()}, 
     ${Color(headerColor).darken(0.8).toString()});
   border-top-left-radius: 4px;
