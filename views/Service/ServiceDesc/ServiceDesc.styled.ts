@@ -43,7 +43,7 @@ export const LogosCont = styled.div`
 export const SkillLogoCont1 = styled.div`
   width: 80%;
   height: 80%;
-  opacity: 0.85;
+  opacity: 0.65;
   position: absolute;
   right: 50%;
   bottom: 50%;
