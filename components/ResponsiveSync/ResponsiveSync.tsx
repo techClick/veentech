@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { headerColor } from 'styles/styled';
 import SideBar from 'views/components/SideBar/SideBar';
 
 const ResponsiveSync = function ResponsiveSync({ children }:{ children: any }) {
@@ -7,6 +8,8 @@ const ResponsiveSync = function ResponsiveSync({ children }:{ children: any }) {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  (document.body.style as any).background = headerColor;
 
   return (
     <>
