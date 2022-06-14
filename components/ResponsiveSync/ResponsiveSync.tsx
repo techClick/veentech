@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { headerColor } from 'styles/styled';
+import { headerColor, textColor2 } from 'styles/styled';
 import SideBar from 'views/components/SideBar/SideBar';
 
 const ResponsiveSync = function ResponsiveSync({ children }:{ children: any }) {
@@ -9,7 +9,10 @@ const ResponsiveSync = function ResponsiveSync({ children }:{ children: any }) {
     setMounted(true);
   }, []);
 
-  (document.body.style as any).background = headerColor;
+  if (typeof window !== 'undefined') {
+    (document.body.style as any).background = headerColor;
+    (document.body.style as any).color = textColor2;
+  }
 
   return (
     <>

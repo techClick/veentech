@@ -17,7 +17,9 @@ const Intro = function Intro() {
             </S.IntroText2>
           </S.IntroText>
           <S.ButtonDiv>
-            <S.Button>
+            <S.Button
+              onClick={() => document.getElementById('learnMore')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Learn more
             </S.Button>
             <MainButton>
