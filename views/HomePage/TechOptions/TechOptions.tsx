@@ -1,5 +1,6 @@
 import { faEnvelope, faEye, faGlobe, faMobileScreen, faRobot, faServer } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { ContainerMax } from 'styles/styled';
 import * as S from './TechOptions.styled';
@@ -10,42 +11,51 @@ const TechOptions = function TechOptions() {
     description: `Acquire hardware or software that is tailored to your business needs.
       Simplify business processes with custom devices or software.`,
     icon: faRobot,
+    path: '/services/automation',
   }, {
     name: 'Business Website',
     description: `Acquire an online application that showcases your business,
       builds consumer base and gathers feedback.`,
     icon: faGlobe,
+    path: '/services/automation',
   }, {
     name: 'Custom Mobile App',
     description: `Acquire a mobile application that is tailored to your business processes.
       Be ever close to your consumers and effiecient in your operations.`,
     icon: faMobileScreen,
+    path: '/services/automation',
   }, {
     name: 'Database Warehousing',
     description: `Acquire a repository for your data and information. Access to this database
       can be granted to your clients or employees.`,
     icon: faServer,
+    path: '/services/automation',
   }, {
     name: 'Business Email',
     description: `Standout and have a private and personalized company email address,
       which will be used by you and your employees.`,
     icon: faEnvelope,
+    path: '/services/automation',
   }, {
     name: 'Digital Advertising',
     description: `Take advantage of tools like Google, Facebook and YouTube Ads
       and grow your consumer base.`,
     icon: faEye,
+    path: '/services/automation',
   }, {
     name: 'Data Analytics',
     description: `Utlizie software tools like Python, Excel and Power BI to
       visualize data and analyze your business.`,
     icon: faEnvelope,
+    path: '/services/automation',
   }, {
     name: 'Video Advertising',
     description: `Take advantage of tools like iMovie and Final Cut Pro.
       Create attractive and informative videos that grow your consumer base via YouTube.`,
     icon: faEnvelope,
+    path: '/services/automation',
   }];
+  const router = useRouter();
 
   return (
     <S.MainContainer>
@@ -68,7 +78,7 @@ const TechOptions = function TechOptions() {
               </S.OptionName>
               <S.Description>{option.description}</S.Description>
               <S.ButtonDiv>
-                <S.Button>
+                <S.Button onClick={() => router.push(option.path)}>
                   Learn more
                 </S.Button>
                 <S.MainButton>

@@ -7,7 +7,7 @@ export const GradientDiv = styled.div<any>`
   left: 0;
   width: 100vw;
   height: ${(props) => props.height1 || '78vh'};
-  z-index: 0.1;
+  z-index: 1;
   background: linear-gradient(transparent, ${headerColor});
   min-width: 1290px;
 `;
@@ -18,7 +18,7 @@ export const Bg = styled.div<any>`
   left: 0;
   width: 100vw;
   height: ${(props) => props.height2 || '22vh'};
-  z-index: 0.1;
+  z-index: 1;
   min-width: 1290px;
   background: ${headerColor};
   -webkit-box-shadow: 0px -140px 140px ${headerColor};

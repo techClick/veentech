@@ -21,6 +21,7 @@ export const BgContainer = styled.div`
   margin-top: -1px;
   padding-top: 17vh;
   overflow: hidden;
+  position: relative;
   @media(min-width: 1291px) {
     background-size: 100vw auto;
   }
@@ -84,8 +85,6 @@ export const Label2 = styled.div`
   line-height: 1.3;
   font-size: calc(12px + 0.275vw);
   font-family: Lato;
-  /* padding-bottom: 25px;
-  border-bottom: 1px dotted ${Color(textColor2).darken(0.3).toString()}; */
   color: ${textColor2};
 `;
 
