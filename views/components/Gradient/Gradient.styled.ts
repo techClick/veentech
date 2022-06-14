@@ -14,14 +14,14 @@ export const GradientDiv = styled.div<any>`
 
 export const Bg = styled.div<any>`
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
   width: 100vw;
   height: ${(props) => props.height2 || '22vh'};
   z-index: 0.1;
   min-width: 1290px;
   background: ${headerColor};
-  -webkit-box-shadow: 0px -140px 139px ${headerColor};
-  -moz-box-shadow: 0px -140px 139px ${headerColor};
-  box-shadow: 0px -140px 139px ${headerColor};
+  -webkit-box-shadow: 0px -140px 140px ${headerColor};
+  -moz-box-shadow: 0px -140px 140px ${headerColor};
+  box-shadow: 0px -140px 140px ${headerColor};
 `;

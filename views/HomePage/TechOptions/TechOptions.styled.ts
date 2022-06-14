@@ -13,7 +13,7 @@ export const TechOption = styled.div`
   background: linear-gradient(${optionsColor}, ${Color(optionsColor).darken(0.1).toString()});
   background: ${optionsColor};
   display: inline-block;
-  min-width: 305px;
+  min-width: 205px;
   width: calc(((100% - 75px) / 3));
   margin-right: 25px;
   height: 290px;

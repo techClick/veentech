@@ -41,6 +41,6 @@ export const BgContainer3 = styled.div`
   box-shadow: inset 0 -300px 50px -50px ${headerColor};
   @media (max-width: 565px) {
     background-position: center top;
-    box-shadow: inset 0 -380px 50px -50px ${headerColor};
+    box-shadow: inset 0 -350px 50px -50px ${headerColor};
   }
 `;

@@ -5,12 +5,11 @@ import { headerColor, textColor, textColor2 } from 'styles/styled';
 export const FooterContainer = styled.div<any>`
   padding: 4.5em 0 8em 0;
   width: 100%;
-  background: linear-gradient(${Color(headerColor).darken(0.1).toString()}, 
-    ${Color(headerColor).darken(0.25).toString()});
+  background: ${Color(headerColor).darken(0.1).toString()};
   color: ${Color(textColor2).lighten(0).toString()};
   position: relative;
   z-index: 3;
-  margin-top: -1px;
+  margin-top: -1px; // 8px;
   @media(max-width: 900px) {
     padding: 3.5em 0px 22.5em 0px;
     display: flex;

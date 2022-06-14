@@ -47,7 +47,7 @@ export const LabelContainer = styled.div`
   align-items: center;
   // background: ${Color(headerColor).darken(0.175).toString()};
   background: linear-gradient(${Color(headerColor).darken(0).toString()}, 
-    ${Color(headerColor).darken(0.8).toString()});
+    ${Color(headerColor).darken(0.3).toString()});
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   @media(max-width: ${all_lowRes}) {
