@@ -1,3 +1,5 @@
+import { setIsShowServices } from 'views/HomePage/redux';
+
 let isShowingMenu = false;
 
 export const moveSideBar = function moveSideBar(removeOnly: boolean) {
@@ -26,20 +28,28 @@ export const moveSideBar = function moveSideBar(removeOnly: boolean) {
 export const tabs = [{
   name: 'About',
   path: '/about',
-  action: () => true,
+  action: () => {
+    isShowingMenu = false;
+    return true;
+  },
 }, {
   name: 'For Businesses',
-  path: '/?ref=1',
-  action: () => {
+  path: '/',
+  action: (dispatch: Function) => {
     const page = window.location.pathname.split('/').pop();
     if (page === '') {
       document.getElementById('learnMore')?.scrollIntoView({ behavior: 'smooth' });
       return false;
     }
+    dispatch(setIsShowServices(true));
+    isShowingMenu = false;
     return true;
   },
 }, {
   name: 'Contact',
   path: '/contact',
-  action: () => true,
+  action: () => {
+    isShowingMenu = false;
+    return true;
+  },
 }];

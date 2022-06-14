@@ -17,7 +17,7 @@ export const Header = styled.div`
   font-weight: 800;
   max-width: 100%;
   line-height: 1.5;
-  font-size: calc(14px + 0.35vw);
+  font-size: calc(15px + 0.3vw);
   font-family: Poppins;
   padding: 14px 25px;
   padding-bottom: 0px;

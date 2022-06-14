@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import MediaQuery from 'react-responsive';
 import { useRouter } from 'next/router';
+import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import * as S from './Header.styled';
 import { moveSideBar, tabs } from './utils/utils';
 import Logo from '../Logo/Logo';
 
-const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
+const Header = function Header() {
   const [tabActive] = useState<boolean[]>(tabs.map(() => false));
   const router = useRouter();
+  const dispatch = useDispatch();
 
   return (
     <S.Container id="header">
@@ -17,10 +19,6 @@ const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
         <MediaQuery maxWidth={570}>
           <S.MenuContainer>
             <S.Menu onClick={() => {
-              if (isNoLinks) {
-                router.push('/');
-                return;
-              }
               moveSideBar(false);
             }}
             >
@@ -34,11 +32,11 @@ const Header = function Header({ isNoLinks }:{ isNoLinks?: boolean }) {
           </S.LogoCont>
           <S.TabsContainer>
             {
-              !isNoLinks && tabs.map((tab, i) => (
+              tabs.map((tab, i) => (
                 <S.Tab
                   key={`tab_${i}`}
                   onClick={() => {
-                    if (tab.action()) router.push(tab.path);
+                    if (tab.action(dispatch)) router.push(tab.path);
                   }}
                 >
                   {tab.name}

@@ -1,4 +1,5 @@
 import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import homeReducer from 'views/HomePage/redux';
 
 export interface AppState {
   hasSyncedWithStorage: boolean,
@@ -27,6 +28,7 @@ export const store = configureStore({
   }),
   reducer: {
     app: counterSlice.reducer,
+    home: homeReducer,
   },
 });
 

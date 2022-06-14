@@ -32,9 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         ) : (
           <StorageSync>
             <ResponsiveSync>
-              <div role="dialog">
-                <Component {...pageProps} />
-              </div>
+              <Component {...pageProps} />
             </ResponsiveSync>
           </StorageSync>
         )

@@ -6,11 +6,12 @@ export const Container = styled.div`
   background: ${sideBarColor};
   width: max-content;
   height: 100%;
-  padding: 12px 10px;
+  padding: 12px 12px;
   position: fixed;
   left: 0;
   top: 0;
   padding-top: 10px;
+  padding-left: 8px;
   transform: translateX(-100%);
   z-index: 4;
 `;
@@ -19,7 +20,7 @@ export const LogoCont = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  background: ${Color(sideBarColor).darken(0.2).toString()};
+  background: ${Color(sideBarColor).lighten(0.3).toString()};
   display: flex;
   justify-content: center;
   align-items: center;

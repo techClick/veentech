@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react';
 import Header from 'views/components/Header/Header';
 import Footer from 'views/components/Footer/Footer';
+import { useAppSelector } from 'redux/hooks';
+import { useDispatch } from 'react-redux';
 import LearnMore from './LearnMore/LearnMore';
 import * as S from './HomePage.styled';
 import Intro from './Intro/Intro';
 import TechOptions from './TechOptions/TechOptions';
 import Consult from '../components/Consult/Consult';
 import HowWeWork from './HowWeWork/HowWeWork';
+import { selectIsShowServices, setIsShowServices } from './redux';
 
 const HomePage = function HomePage() {
-  const { search } = window.location;
-  const params = new URLSearchParams(search);
-  const ref = params.get('ref');
+  const isShowServices = useAppSelector(selectIsShowServices);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (ref && Number(ref) === 1) {
+    if (isShowServices) {
+      dispatch(setIsShowServices(false));
       document.getElementById('learnMore')?.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
