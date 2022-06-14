@@ -33,6 +33,8 @@ export const FlexContainer = styled.div`
   display: flex;
   width: 100%;
   height: max-content;
+  max-width: 1000px;
+  margin: auto;
   @media(max-width: ${all_lowRes}) {
     flex-direction: column;
   }
@@ -43,26 +45,33 @@ export const LabelContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gr${Color(headerColor).darken(0.175).toString()};
+  background: linear-gradient(${Color(headerColor).darken(0).toString()}, 
+    ${Color(headerColor).darken(0.8).toString()});
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   @media(max-width: ${all_lowRes}) {
     justify-content: 0;
     align-items: 0;
     width: 100%;
     margin-bottom: 15px;
+    background: none;
   }
 `;
 
 export const LabelCont = styled.div`
   max-width: 100%;
-  margin-top: -90px;
+  margin-top: -80px;
   @media(max-width: ${all_lowRes}) {
     margin-top: 0px;
   }
 `;
 
 export const Label = styled.div`
-  font-size: calc(18px + 0.75vw);
+  font-size: calc(18px + 0.6vw);
   font-weight: 600;
   font-family: Poppins;
+  padding-bottom: 9px;
   @media(max-width: ${all_lowRes}) {
     margin: auto;
   }
@@ -73,11 +82,11 @@ export const Label2 = styled.div`
   max-width: 100%;
   width: max-content;
   line-height: 1.3;
-  font-size: calc(13px + 0.275vw);
+  font-size: calc(12px + 0.275vw);
   font-family: Lato;
+  /* padding-bottom: 25px;
+  border-bottom: 1px dotted ${Color(textColor2).darken(0.3).toString()}; */
   color: ${textColor2};
-  padding-bottom: 25px;
-  border-bottom: 1px solid ${textColor2};
 `;
 
 export const MessageConatiner = styled.div`
@@ -92,7 +101,8 @@ export const MessageBox = styled.div`
   width: 100%;
   height: max-content;
   background: ${Color(optionsColor).lighten(0.2).toString()};
-  border-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding: 50px 35px;
   border: 1px solid ${Color(headerColor).lighten(0.2).toString()};
   @media(max-width: ${all_lowRes}) {

@@ -4,7 +4,6 @@ import { buttonColor, headerColor, textColor, textColor2 } from 'styles/styled';
 
 export const MainContainer = styled.div`
   width: 100%;
-  padding-top: 25px;
   padding-bottom: 25px;
 `;
 

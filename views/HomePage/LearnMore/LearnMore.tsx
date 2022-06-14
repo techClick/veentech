@@ -10,7 +10,7 @@ const LearnMore = function LearnMore() {
           <S.Header>
             OUR TECH SERVICES
             <S.Label>
-              Services we deploy to optimize businesses today
+              Services we deploy to grow businesses today
             </S.Label>
           </S.Header>
         </ContainerMax>

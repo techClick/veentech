@@ -8,7 +8,7 @@ export const Container = styled.div`
   width: 100%;
   height: max-content;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 `;
 
 export const Label = styled.div`
@@ -18,12 +18,15 @@ export const Label = styled.div`
   font-size: calc(14px + 0.35vw);
   font-family: Poppins;
   padding: 11px 25px;
-  padding-bottom: 0px;
+  padding-right: 0px;
   padding-left: 0px;
   border-radius: 2px;
   width: max-content;
   color: ${textColor4};
-  margin-top: 55px;
+  margin-top: 45px;
+  // padding-bottom: 25px;
+  // border-bottom: 2px dotted ${Color(textColor2).darken(0.4).toString()};
+  margin-bottom: 7px;
   @media(max-width: 890px) {
     max-width: 80vw;
   }
@@ -37,9 +40,6 @@ export const Label2 = styled.div`
   font-size: calc(11px + 0.275vw);
   font-family: Lato;
   color: ${textColor2};
-  padding-bottom: 25px;
-  margin-bottom: 17px;
-  border-bottom: 1px solid ${textColor2};
 `;
 
 export const AssureCont = styled.div`
@@ -52,7 +52,7 @@ const borderColor = Color(optionsColor).lighten(2.2).toString();
 const setOfTwoRes = '1157px';
 const setOfOneRes = '555px';
 export const Assurance = styled.div`
-  border-radius: 15px;
+  border-radius: 10px;
   border: 1px solid ${borderColor};
   padding: 25px;
   padding-bottom: 35px;
