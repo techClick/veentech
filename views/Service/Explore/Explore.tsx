@@ -16,6 +16,7 @@ const Explore = function Explore({ service }:{ service: any }) {
           </S.PriceButton>
         </S.PricesBtnDiv>
       </S.PricesCont>
+      {service.contact}
     </S.Container>
   );
 };

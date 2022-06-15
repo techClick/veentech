@@ -5,13 +5,12 @@ import { buttonColor, columnRes_HPConsult, headerColor, textColor2 } from 'style
 export const MainContainer = styled.div`
   width: 100%;
   height: max-content;
-  padding-bottom: 25px;
 `;
 
-export const Container = styled.div`
+export const Container = styled.div<any>`
   width: 100%;
   height: max-content;
-  padding-top: 280px;
+  padding-top: ${(props) => props.topPad || '280px'};
   overflow: hidden;
 `;
 
@@ -47,7 +46,6 @@ export const LeftSection = styled.div`
   align-items: center;
   position: relative;
   z-index: 2;
-  // border-right: 2px solid ${Color(headerColor).darken(0.1).toString()};
   @media(max-width: ${columnRes_HPConsult}) {
     width: 100%;
     height: max-content;

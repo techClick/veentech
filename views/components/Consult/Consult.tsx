@@ -3,12 +3,11 @@ import { ContainerMax } from 'styles/styled';
 import * as S from './Consult.styled';
 import Experience from './Experience/Experience';
 
-const Consult = function Consult() {
-  // Discuss with us
+const Consult = function Consult({ topPad }:{ topPad?: string }) {
   return (
     <S.MainContainer>
       <ContainerMax>
-        <S.Container>
+        <S.Container topPad={topPad}>
           <S.Container2>
             <S.TransparentBG />
             <S.LeftSection>

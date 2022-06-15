@@ -5,9 +5,9 @@ import Color from 'color';
 export const ServiceName = styled.div`
   width: 100%;
   padding: 20px 30px;
-  border-left: 3px solid ${Color(buttonColor).darken(0.2).toString()};
+  border-left: 2px solid ${Color(buttonColor).darken(0.2).toString()};
   background: ${Color(headerColor).darken(0.15).toString()};
-  font-size: calc(12px + 0.45vw);
+  font-size: calc(13px + 0.25vw);
   font-family: Poppins;
   font-weight: 700;
   border-top-right-radius: 4px;
@@ -16,6 +16,9 @@ export const ServiceName = styled.div`
   overflow: visible;
   position: relative;
   z-index: 2;
+  @media(max-width: 192px) {
+    padding: 5px;
+  }
 `;
 
 const columnRes = '658px';
@@ -43,7 +46,7 @@ export const LogosCont = styled.div`
 export const SkillLogoCont1 = styled.div`
   width: 80%;
   height: 80%;
-  opacity: 0.65;
+  opacity: 0.725;
   position: absolute;
   right: 50%;
   bottom: 50%;
@@ -81,7 +84,7 @@ export const SkillLogo = styled.img`
   }
 `;
 
-export const detailsColor = Color(headerColor).lighten(0.3).toString();
+export const detailsColor = Color(headerColor).lighten(0.6).toString();
 export const Details = styled.div`
   padding: 30px 35px;
   padding-bottom: 40px;
@@ -91,6 +94,9 @@ export const Details = styled.div`
   color: ${textColor2};
   font-weight: 300;
   line-height: 1.5;
+  @media(max-width: 192px) {
+    padding: 8px;
+  }
 `;
 
 export const Line1 = styled.div`

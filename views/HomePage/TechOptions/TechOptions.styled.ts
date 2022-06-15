@@ -153,7 +153,7 @@ export const Help = styled.div`
   max-width: 100%;
   width: max-content;
   line-height: 1.3;
-  font-size: calc(14.8px + 0.15vw);
+  font-size: calc(11px + 0.25);
   color: ${textColor2};
   background: ${optionsColor};
   padding: 21px 30px;

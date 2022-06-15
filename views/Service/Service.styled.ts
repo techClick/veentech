@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import bgImage from 'assets/bg4.jpg';
-import { headerHeight } from 'styles/styled';
+import { headerColor, headerHeight } from 'styles/styled';
+import Color from 'color';
 
 export const Container = styled.div`
   width: 100%;
@@ -28,4 +29,15 @@ export const Container2 = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: auto;
+`;
+
+export const BgContainer2 = styled.div`
+  background: ${Color(headerColor).lighten(0.1).toString()};
+  width: 100%;
+  height: calc(100% - ${headerHeight});
+  margin-top: -1px;
+  padding-bottom: 15px;
+  box-shadow: 0 3px 1.5px -1.5px ${Color(headerColor).darken(0.25).toString()};
+  position: relative;
+  z-index: 3;
 `;

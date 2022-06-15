@@ -1,5 +1,7 @@
 import React from 'react';
 import { ContainerMax } from 'styles/styled';
+import Consult from 'views/components/Consult/Consult';
+import Footer from 'views/components/Footer/Footer';
 import Gradient from 'views/components/Gradient/Gradient';
 import Header from 'views/components/Header/Header';
 import Explore from './Explore/Explore';
@@ -18,10 +20,18 @@ const Service = function Service({ service }:{ service: string }) {
         <ContainerMax>
           <S.Container2>
             <ServiceDesc service={thisService} />
-            <Explore service={thisService} />
           </S.Container2>
         </ContainerMax>
       </S.BgContainer>
+      <S.BgContainer2>
+        <ContainerMax>
+          <S.Container2>
+            <Explore service={thisService} />
+          </S.Container2>
+        </ContainerMax>
+        <Consult topPad="140px" />
+      </S.BgContainer2>
+      <Footer />
     </S.Container>
   );
 };

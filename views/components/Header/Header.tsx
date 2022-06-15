@@ -36,7 +36,7 @@ const Header = function Header() {
                 <S.Tab
                   key={`tab_${i}`}
                   onClick={() => {
-                    if (tab.action(dispatch)) router.push(tab.path);
+                    if (tab.name !== 'For Businesses') router.push(tab.path);
                   }}
                 >
                   {tab.name}
