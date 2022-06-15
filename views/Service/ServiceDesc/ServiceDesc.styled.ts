@@ -81,11 +81,12 @@ export const SkillLogo = styled.img`
   }
 `;
 
+export const detailsColor = Color(headerColor).lighten(0.3).toString();
 export const Details = styled.div`
   padding: 30px 35px;
   padding-bottom: 40px;
   flex: 1;
-  background: ${Color(headerColor).lighten(0.3).toString()};
+  background: ${detailsColor};
   font-size: calc(12.5px + 0.25vw);
   color: ${textColor2};
   font-weight: 300;

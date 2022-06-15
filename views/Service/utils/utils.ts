@@ -7,14 +7,12 @@ import node from 'assets/node.png';
 
 export const services = [{
   name: 'automation',
-  line1: 'We offer automation services.',
-  line2: `Our team of expert software developers have extensive experience
-    developing and deploying complex functioning applications.`,
-  line3: `Take advantage of our vast experience with Web Development,
+  line1: 'Simplify your business processes with our automation service.',
+  line2: `Our team of agile software developers can develop
+    and deploy complex functioning applications easily.`,
+  line3: `Take advantage of our extensive experience with Web Development,
     Mobile App Development, Desktop App Development and Embedded Software Development.`,
   line4: 'We develop low-scale projects in one month.',
+  images: [react, angular, node, apple, android, windows],
+  constDesc: 'automation',
 }];
-
-export const servicesImgs: { [key: string]: any } = {
-  automation: [react, angular, node, apple, android, windows],
-};

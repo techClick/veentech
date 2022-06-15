@@ -1,11 +1,8 @@
 import { StaticImageData } from 'next/image';
 import React from 'react';
-import { servicesImgs } from '../utils/utils';
 import * as S from './ServiceDesc.styled';
 
 const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
-  const serviceImgs = servicesImgs[service.name];
-
   return (
     <>
       <S.ServiceName>
@@ -15,7 +12,7 @@ const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
         <S.LogosCont>
           <S.SkillLogoCont1>
             {
-              serviceImgs.map((img: StaticImageData, index: number) => (
+              service.images.map((img: StaticImageData, index: number) => (
                 <S.SkillLogoCont key={`logo_${index}`}>
                   <S.SkillLogo src={img.src} />
                 </S.SkillLogoCont>
