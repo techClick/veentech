@@ -4,15 +4,15 @@ import Head from 'next/head';
 import * as S from 'styles/index.styled';
 import Service from 'views/Service/Service';
 
-const Analytics: NextPage = () => {
+const DataAnalysis: NextPage = () => {
   return (
     <S.Container>
       <Head>
         <title>Automation - Veentech</title>
       </Head>
-      <Service service="Data Analytics" />
+      <Service service="Data Analysis" />
     </S.Container>
   );
 };
 
-export default Analytics;
+export default DataAnalysis;

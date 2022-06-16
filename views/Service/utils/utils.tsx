@@ -17,7 +17,22 @@ import python from 'assets/python.png';
 import pandas from 'assets/pandas.png';
 import pdf from 'assets/pdf.png';
 import word from 'assets/word.png';
-
+import adwords from 'assets/adwords.png';
+import google from 'assets/google.png';
+import youtube from 'assets/youtube.png';
+import fb from 'assets/fb.png';
+import twitter from 'assets/twitter.png';
+import instagram from 'assets/insta.svg';
+import ppro from 'assets/ppro.png';
+import pelements from 'assets/pelements.png';
+import fcutpro from 'assets/fcutpro.png';
+import imov from 'assets/imov.png';
+import gmail from 'assets/gmail.png';
+import outlook from 'assets/outlook.png';
+import hostinger from 'assets/hostinger.svg';
+import yandex from 'assets/yandex.png';
+import zoho from 'assets/zoho.png';
+import fastmail from 'assets/fastmail.png';
 import { faEnvelope, faEye, faGlobe, faMobileScreen, faRobot, faServer } from '@fortawesome/free-solid-svg-icons';
 import Contacts from '../Contacts/Contacts';
 import * as S from './utils.styled';
@@ -93,20 +108,20 @@ export const services = [{
   images: [sql, postgres, mariaDB, mysql, node, php],
   constDesc: 'our database management',
 }, {
-  name: 'Data Analytics',
+  name: 'Data Analysis',
   contact: <Contacts msg={`If you would like more information about our Data Analysis skills, you can message us
     or call us.`}
   />,
   description: `Utlizie software tools like Python, Excel and Power BI to
     visualize data and analyze your business.`,
   icon: faEnvelope,
-  path: '/services/analytics',
+  path: '/services/dataanalysis',
   line1: 'Vizualize and analyze your data with our Data Analytics team.',
   line2: `We have accredited professionals in our data analytics team that can help
     you make critical decisions by creating interactive charts and graphs of your
     business dealings.`,
   line3: `We support our data analysis with interactive reporting using Microsoft Power BI, PDF's and 
-    documents with findings and suggestions by our expert data analysts.`,
+    documents together with findings and suggestions by our expert data analysts.`,
   line4: <>
     To view a sample of our report click
     {' '}
@@ -131,7 +146,7 @@ export const services = [{
     displaying your products in their browsers as ads and showing up in their searches.
     Digital Marketing is what you need to acheive success in your business.`,
   line4: 'We deploy search engine and display ads in under a week.',
-  images: [react, angular, node, apple, android, windows],
+  images: [adwords, google, youtube, fb, twitter, instagram],
   constDesc: 'our digital marketing service',
 }, {
   name: 'Video Advertising',
@@ -142,13 +157,14 @@ export const services = [{
     Create attractive and informative videos that grow your consumer base via YouTube.`,
   icon: faEnvelope,
   path: '/services/videoads',
-  line1: 'Grow your consumer base with YouTube Video Ads.',
+  line1: 'Grow your consumer base with our YouTube Video Advertising service.',
   line2: `We have years of experience developing curative videos that direct consumers to
     your business.`,
-  line3: `Out Video Advertising team are experts with tools such as iMovie and Final Cut Pro.
+  line3: `Out Video Advertising team are experts with tools such as Premier Pro, 
+    Premier elements, Final Cut Pro, iMovie and more.
     Utilize the power of Video Advertising and drive success in your business`,
   line4: 'We create 30 second videos in under two weeks.',
-  images: [react, angular, node, apple, android, windows],
+  images: [adwords, youtube, ppro, pelements, fcutpro, imov],
   constDesc: 'our video advertising',
 }, {
   name: 'Business Email',
@@ -160,11 +176,11 @@ export const services = [{
   icon: faEnvelope,
   path: '/services/email',
   line1: 'We offer business email management services.',
-  line2: `Our team of agile software developers can host a domain
+  line2: `Our team of computer engineers can host a domain
     and business email address for you easily.`,
   line3: `E-mail is the main operator of business and e-commerce services, grow your repuation,
-    attract clients, send private messages and communicate better with our business email service.`,
-  line4: 'We deploy atleast 50 email reciepients in 24 hours.',
-  images: [react, angular, node, apple, android, windows],
+    attract clients, send private messages and communicate better using our business email service.`,
+  line4: 'We deploy a maximum 100 email reciepients in 24 hours.',
+  images: [gmail, outlook, hostinger, yandex, zoho, fastmail],
   constDesc: 'a business email',
 }];

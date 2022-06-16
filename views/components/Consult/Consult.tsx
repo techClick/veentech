@@ -16,7 +16,7 @@ const Consult = function Consult({ topPad }:{ topPad?: string }) {
                   Leave it to us.
                 </S.TopText>
                 <S.Text>
-                  We gurantee growth in your business just days after setup.
+                  We foster success in your business just days after setup.
                 </S.Text>
                 <S.ConsultUs>
                   <S.MainButton>

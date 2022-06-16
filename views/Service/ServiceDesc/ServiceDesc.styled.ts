@@ -7,8 +7,7 @@ export const ServiceName = styled.div`
   padding: 20px 30px;
   border-left: 2px solid ${Color(buttonColor).darken(0.2).toString()};
   background: ${Color(headerColor).darken(0.15).toString()};
-  font-size: calc(13px + 0.25vw);
-  font-family: Poppins;
+  font-size: calc(12px + 0.115vw);
   font-weight: 700;
   border-top-right-radius: 4px;
   border-top-left-radius: 2px;
@@ -63,12 +62,13 @@ export const SkillLogoCont1 = styled.div`
   }
 `;
 
-export const SkillLogoCont = styled.div`
+export const SkillLogoCont = styled.div<any>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   height: calc(100% / 3);
+  transform: translateY(${(props) => props.adjustY && '-4px'});
   @media(max-width: ${columnRes}) {
     width: calc(100% / 6);
     height: max-content;
