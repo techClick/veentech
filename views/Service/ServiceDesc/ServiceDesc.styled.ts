@@ -76,7 +76,7 @@ export const SkillLogoCont = styled.div`
 `;
 
 export const SkillLogo = styled.img`
-  width: 55px;
+  width: 57px;
   height: auto;
   @media(max-width: ${columnRes}) {
     width: calc(10px + 40%);

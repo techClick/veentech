@@ -5,8 +5,22 @@ import apple from 'assets/apple.png';
 import android from 'assets/android.png';
 import windows from 'assets/windows.png';
 import node from 'assets/node.png';
+import php from 'assets/php.png';
+import sql from 'assets/sql.png';
+import js from 'assets/js.jpg';
+import mariaDB from 'assets/mariadb.png';
+import mysql from 'assets/mysql.png';
+import postgres from 'assets/postgres.png';
+import excel from 'assets/excel.png';
+import powerBI from 'assets/powerbi.png';
+import python from 'assets/python.png';
+import pandas from 'assets/pandas.png';
+import pdf from 'assets/pdf.png';
+import word from 'assets/word.png';
+
 import { faEnvelope, faEye, faGlobe, faMobileScreen, faRobot, faServer } from '@fortawesome/free-solid-svg-icons';
 import Contacts from '../Contacts/Contacts';
+import * as S from './utils.styled';
 
 export const services = [{
   name: 'Automation',
@@ -34,13 +48,14 @@ export const services = [{
     builds consumer base and gathers feedback.`,
   icon: faGlobe,
   path: '/services/website',
-  line1: 'Simplify your business processes with our automation service.',
+  line1: 'Showcase your business with our Business Website service.',
   line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
-  images: [react, angular, node, apple, android, windows],
+    and deploy simple to complex websites easily.`,
+  line3: `Build strong relationships with consumers, increase business efficiency,
+    boost your reputation, promote your business and create a tool for sales generation
+    with a business website.`,
+  line4: 'We develop low-scale websites in one month.',
+  images: [react, angular, node, php, sql, js],
   constDesc: 'a business website',
 }, {
   name: 'Custom Mobile App',
@@ -51,13 +66,14 @@ export const services = [{
     Be ever close to your consumers and effiecient in your operations.`,
   icon: faMobileScreen,
   path: '/services/mobileapp',
-  line1: 'Simplify your business processes with our automation service.',
+  line1: 'Aquire a mobile application that simplifies your business processes and engages consumers.',
   line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
-  images: [react, angular, node, apple, android, windows],
+    and deploy simple to complex mobile applications easily.`,
+  line3: `Mobile phones are the most frequently used devices by consumers.
+    Take advantage of our extensive experience with iOS and Android Development and
+    increase your business proficiency with a mobile app.`,
+  line4: 'We develop low-scale mobile apps in one month.',
+  images: [apple, android, react, angular, node, php],
   constDesc: 'a custom mobile app',
 }, {
   name: 'Database Management',
@@ -68,13 +84,13 @@ export const services = [{
     can be granted to your clients or employees.`,
   icon: faServer,
   path: '/services/dba',
-  line1: 'Simplify your business processes with our automation service.',
-  line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
-  images: [react, angular, node, apple, android, windows],
+  line1: 'Aquire a database manager for your business data and information.',
+  line2: `A database is the best way to store information and
+    we have expert Database Administrators ready to handle your database needs.`,
+  line3: `Take advantage of our extensive experience with writing SQL queries
+    on platforms such as MySQL, MSSQL, PostgreSQL, NoSQL, Maria DB and more.`,
+  line4: 'We deploy databases in under 72 hours',
+  images: [sql, postgres, mariaDB, mysql, node, php],
   constDesc: 'our database management',
 }, {
   name: 'Data Analytics',
@@ -85,13 +101,19 @@ export const services = [{
     visualize data and analyze your business.`,
   icon: faEnvelope,
   path: '/services/analytics',
-  line1: 'Simplify your business processes with our automation service.',
-  line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
-  images: [react, angular, node, apple, android, windows],
+  line1: 'Vizualize and analyze your data with our Data Analytics team.',
+  line2: `We have accredited professionals in our data analytics team that can help
+    you make critical decisions by creating interactive charts and graphs of your
+    business dealings.`,
+  line3: `We support our data analysis with interactive reporting using Microsoft Power BI, PDF's and 
+    documents with findings and suggestions by our expert data analysts.`,
+  line4: <>
+    To view a sample of our report click
+    {' '}
+    <S.WhitePart>here</S.WhitePart>
+    .
+  </>,
+  images: [excel, powerBI, python, pandas, pdf, word],
   constDesc: 'our data analytics',
 }, {
   name: 'Digital Marketing',
@@ -102,12 +124,13 @@ export const services = [{
     and grow your consumer base.`,
   icon: faEye,
   path: '/services/marketing',
-  line1: 'Simplify your business processes with our automation service.',
-  line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
+  line1: 'Grow your consumer base with our Digital Marketing service',
+  line2: `We have 10+ years experience creating Display Ads on Social and Media platforms as well
+    as Search Engine Marketing and Google SEO.`,
+  line3: `Drive sales in your business by directing people to your store,
+    displaying your products in their browsers as ads and showing up in their searches.
+    Digital Marketing is what you need to acheive success in your business.`,
+  line4: 'We deploy search engine and display ads in under a week.',
   images: [react, angular, node, apple, android, windows],
   constDesc: 'our digital marketing service',
 }, {
@@ -119,12 +142,12 @@ export const services = [{
     Create attractive and informative videos that grow your consumer base via YouTube.`,
   icon: faEnvelope,
   path: '/services/videoads',
-  line1: 'Simplify your business processes with our automation service.',
-  line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
+  line1: 'Grow your consumer base with YouTube Video Ads.',
+  line2: `We have years of experience developing curative videos that direct consumers to
+    your business.`,
+  line3: `Out Video Advertising team are experts with tools such as iMovie and Final Cut Pro.
+    Utilize the power of Video Advertising and drive success in your business`,
+  line4: 'We create 30 second videos in under two weeks.',
   images: [react, angular, node, apple, android, windows],
   constDesc: 'our video advertising',
 }, {
@@ -136,12 +159,12 @@ export const services = [{
     which will be used by you and your employees.`,
   icon: faEnvelope,
   path: '/services/email',
-  line1: 'Simplify your business processes with our automation service.',
-  line2: `Our team of agile software developers can develop
-    and deploy complex functioning applications easily.`,
-  line3: `Take advantage of our extensive experience with Web Development,
-    Mobile App Development, Desktop App Development and Embedded Software Development.`,
-  line4: 'We develop low-scale projects in one month.',
+  line1: 'We offer business email management services.',
+  line2: `Our team of agile software developers can host a domain
+    and business email address for you easily.`,
+  line3: `E-mail is the main operator of business and e-commerce services, grow your repuation,
+    attract clients, send private messages and communicate better with our business email service.`,
+  line4: 'We deploy atleast 50 email reciepients in 24 hours.',
   images: [react, angular, node, apple, android, windows],
   constDesc: 'a business email',
 }];

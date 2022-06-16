@@ -52,7 +52,7 @@ export const tabs = [{
   name: 'For Businesses',
   path: '/',
   action: (dispatch: Function) => {
-    dispatch(setShowPopup({ component: <ServiceDropdown2 /> }));
+    dispatch(setShowPopup({ component: <ServiceDropdown2 />, exitOnBgClick: true }));
     return false;
   },
 }];
