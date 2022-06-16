@@ -122,12 +122,14 @@ export const services = [{
     business dealings.`,
   line3: `We support our data analysis with interactive reporting using Microsoft Power BI, PDF's and 
     documents together with findings and suggestions by our expert data analysts.`,
-  line4: <>
-    To view a sample of our report click
-    {' '}
-    <S.WhitePart>here</S.WhitePart>
-    .
-  </>,
+  line4: (
+    <>
+      To view a sample of our report click
+      {' '}
+      <S.WhitePart>here</S.WhitePart>
+      .
+    </>
+  ),
   images: [excel, powerBI, python, pandas, pdf, word],
   constDesc: 'our data analytics',
 }, {
