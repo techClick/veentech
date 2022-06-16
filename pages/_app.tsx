@@ -3,14 +3,10 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { Provider } from 'react-redux';
-import ResponsiveSync from 'components/ResponsiveSync/ResponsiveSync';
+import Global from 'components/Global/Global';
 import { store } from 'redux/store';
 import Loading from 'components/Loading/Loading';
 import StorageSync from 'components/StorageSync/StorageSync';
-
-if (typeof window !== 'undefined') {
-  // localStorage.clear();
-}
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState<boolean>(false);
@@ -31,9 +27,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Loading />
         ) : (
           <StorageSync>
-            <ResponsiveSync>
+            <Global>
               <Component {...pageProps} />
-            </ResponsiveSync>
+            </Global>
           </StorageSync>
         )
       }

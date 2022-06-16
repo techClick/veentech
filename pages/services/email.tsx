@@ -4,15 +4,15 @@ import Head from 'next/head';
 import * as S from 'styles/index.styled';
 import Service from 'views/Service/Service';
 
-const Automation: NextPage = () => {
+const Email: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Automation - Veentech</title>
+        <title>Business Email - Veentech</title>
       </Head>
-      <Service service="Automation" />
+      <Service service="Business Email" />
     </S.Container>
   );
 };
 
-export default Automation;
+export default Email;

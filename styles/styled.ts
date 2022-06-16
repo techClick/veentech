@@ -30,7 +30,7 @@ export const Background = styled.div<any>`
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
   left: 0;
   background: black;

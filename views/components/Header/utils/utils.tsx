@@ -1,4 +1,7 @@
+import React from 'react';
+import { setShowPopup } from 'redux/store';
 import { setIsShowServices } from 'views/HomePage/redux';
+import ServiceDropdown2 from '../ServiceDropdown2/ServiceDropdown2';
 
 let isShowingMenu = false;
 
@@ -33,7 +36,7 @@ export const tabs = [{
     return true;
   },
 }, {
-  name: 'For Businesses',
+  name: 'Services',
   path: '/',
   action: (dispatch: Function) => {
     const page = window.location.pathname.split('/').pop();
@@ -46,10 +49,10 @@ export const tabs = [{
     return true;
   },
 }, {
-  name: 'Contact',
-  path: '/contact',
-  action: () => {
-    isShowingMenu = false;
-    return true;
+  name: 'For Businesses',
+  path: '/',
+  action: (dispatch: Function) => {
+    dispatch(setShowPopup({ component: <ServiceDropdown2 /> }));
+    return false;
   },
 }];

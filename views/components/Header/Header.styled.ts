@@ -61,20 +61,18 @@ export const Tab = styled.div`
   font-size: 13.75px;
   font-weight: 700;
   position: relative;
-  padding: 5px 0px;
-  cursor: pointer;
+`;
+
+export const TabNameDiv = styled.div`
+  height: 100%;
+  padding: 25.5px 0px;
+`;
+
+export const TabName = styled.div`
+  height: 100%;
   color: ${textColor2};
+  cursor: pointer;
   &:hover{
     color: white;
   }
-`;
-
-export const Underline = styled.div<any>`
-  background: white;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  height: 1px;
-  width: ${(props) => { return props.isActive ? '100%' : '0%'; }};
-  transition: all 0.1s ease-in;
 `;

@@ -47,7 +47,7 @@ export const OptionName = styled.div`
   @media(max-width: 760px) {
     font-size: calc(13px + 0.5vw);
   }
-  @media(max-width: 203px) {
+  @media(max-width: 236px) {
     padding: 25px 10px;
   }
 `;
@@ -58,11 +58,11 @@ export const IconCont = styled.div`
   bottom: 50%;
   transform: translateY(50%);
   color: ${Color(headerColor).darken(0).toString()};
+  @media(max-width: 272px) {
+    display: none;
+  }
   @media(max-width: 257px) {
     right: 5px;
-  }
-  @media(max-width: 203px) {
-    display: none;
   }
 `;
 
@@ -82,7 +82,7 @@ export const Description = styled.div`
   padding: 23px ${pad};
   padding-bottom: 0px;
   color: ${Color(textColor2).lighten(0).toString()};
-  @media(max-width: 203px) {
+  @media(max-width: 236px) {
     padding: 20px 10px;
     padding-bottom: 0px;
   }
