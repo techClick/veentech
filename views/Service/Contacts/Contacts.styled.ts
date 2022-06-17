@@ -6,17 +6,16 @@ import { detailsColor } from '../ServiceDesc/ServiceDesc.styled';
 
 export const MoreCont = styled.div`
   background: ${detailsColor};
-  padding: 16px 20px;
-  padding-top: 13px;
+  padding: 26px 30px;
+  padding-top: 23px;
   width: 100%;
   max-width: max-content;
-  margin-top: 40px;
+  margin-top: 30px;
   color: ${textColor2};
   border-radius: 5px;
   max-width: 560px;
-  @media(max-width: 273px) {
-    padding-left: 8px;
-    padding-right: 8px;
+  @media(max-width: 283px) {
+    padding: 8px;
   }
 `;
 

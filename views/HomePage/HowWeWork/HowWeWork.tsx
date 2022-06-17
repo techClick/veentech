@@ -13,7 +13,7 @@ const HowWeWork = function HowWeWork() {
   }, {
     name: 'Quality',
     description: `We are broiled industry professionals.
-      We assure top standard service.`,
+      We assure a top standard service.`,
     icon: faUserCheck,
   }, {
     name: 'Speed',

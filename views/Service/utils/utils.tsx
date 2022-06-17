@@ -121,7 +121,7 @@ export const services = [{
     you make critical decisions by creating interactive charts and graphs of your
     business dealings.`,
   line3: `We support our data analysis with interactive reporting using Microsoft Power BI, PDF's and 
-    documents together with findings and suggestions by our expert data analysts.`,
+    documents that contain findings and suggestions by our expert data analysts.`,
   line4: (
     <>
       To view a sample of our report click
@@ -141,13 +141,13 @@ export const services = [{
     and grow your consumer base.`,
   icon: faEye,
   path: '/services/marketing',
-  line1: 'Grow your consumer base with our Digital Marketing service',
+  line1: 'Grow your consumer base with our Digital Marketing service.',
   line2: `We have 10+ years experience creating Display Ads on Social and Media platforms as well
     as Search Engine Marketing and Google SEO.`,
   line3: `Drive sales in your business by directing people to your store,
     displaying your products in their browsers as ads and showing up in their searches.
     Digital Marketing is what you need to acheive success in your business.`,
-  line4: 'We deploy search engine and display ads in under a week.',
+  line4: 'We deploy search and display ads in under 72 hours.',
   images: [adwords, google, youtube, fb, twitter, instagram],
   constDesc: 'our digital marketing service',
 }, {

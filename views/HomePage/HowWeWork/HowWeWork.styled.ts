@@ -1,14 +1,13 @@
 import Color from 'color';
 import styled from 'styled-components';
 import { headerColor, textColor2, textColor4 } from 'styles/styled';
-import { optionsColor } from 'views/HomePage/TechOptions/TechOptions.styled';
 
 export const Container = styled.div`
   background: ${headerColor};
   width: 100%;
   height: max-content;
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
 `;
 
 export const Label = styled.div`
@@ -24,8 +23,6 @@ export const Label = styled.div`
   width: max-content;
   color: ${textColor4};
   margin-top: 45px;
-  // padding-bottom: 25px;
-  // border-bottom: 2px dotted ${Color(textColor2).darken(0.4).toString()};
   margin-bottom: 7px;
   @media(max-width: 890px) {
     max-width: 80vw;
@@ -48,7 +45,7 @@ export const AssureCont = styled.div`
   height: max-content;
 `;
 
-const borderColor = Color(optionsColor).lighten(2.2).toString();
+const borderColor = Color(textColor2).darken(0.75).toString();
 const setOfTwoRes = '1157px';
 const setOfOneRes = '555px';
 export const Assurance = styled.div`
@@ -62,6 +59,7 @@ export const Assurance = styled.div`
   vertical-align: top;
   display: inline-block;
   margin-bottom: 15px;
+  box-shadow: inset 0px 0px 9px ${Color(headerColor).darken(3.5).toString()};
   @media(max-width: ${setOfTwoRes}) {
     height: calc(220px + 3vw);
     width: calc((100% - 30px) / 2);

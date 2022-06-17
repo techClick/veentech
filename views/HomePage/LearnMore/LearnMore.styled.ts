@@ -1,4 +1,3 @@
-import Color from 'color';
 import styled from 'styled-components';
 import { headerColor, textColor2 } from 'styles/styled';
 
@@ -38,6 +37,4 @@ export const Label = styled.div`
   font-family: Lato;
   color: ${textColor2};
   margin-top: 2px;
-  // padding-bottom: 25px;
-  // border-bottom: 2px dotted ${Color(textColor2).darken(0.6).toString()};
 `;

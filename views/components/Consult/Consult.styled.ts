@@ -69,7 +69,7 @@ export const TopText = styled.div`
 `;
 
 export const Text = styled.div`
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(12px + 0.3vw);
   font-weight: 300;
   line-height: 1.4;
   margin: auto;
