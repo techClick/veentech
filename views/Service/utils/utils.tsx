@@ -100,11 +100,11 @@ export const services = [{
   icon: faServer,
   path: '/services/dba',
   line1: 'Aquire a database manager for your business data and information.',
-  line2: `A database is the best way to store information and
-    we have expert Database Administrators ready to handle your database needs.`,
-  line3: `Take advantage of our extensive experience with writing SQL queries
+  line2: `A database is the best way to store, maintain and retrieve information.
+    We have expert Database Administrators ready to handle your database needs.`,
+  line3: `Take advantage of our extensive experience in Database Optimization and writing SQL queries
     on platforms such as MySQL, MSSQL, PostgreSQL, NoSQL, Maria DB and more.`,
-  line4: 'We deploy databases in under 72 hours',
+  line4: 'We deploy databases in under 24 hours,',
   images: [sql, postgres, mariaDB, mysql, node, php],
   constDesc: 'our database management',
 }, {
@@ -147,7 +147,7 @@ export const services = [{
   line3: `Drive sales in your business by directing people to your store,
     displaying your products in their browsers as ads and showing up in their searches.
     Digital Marketing is what you need to acheive success in your business.`,
-  line4: 'We deploy search and display ads in under 72 hours.',
+  line4: 'We deploy search and display ads in under 24 hours.',
   images: [adwords, google, youtube, fb, twitter, instagram],
   constDesc: 'our digital marketing service',
 }, {

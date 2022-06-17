@@ -20,9 +20,18 @@ export const BgContainer = styled.div`
   margin-top: -1px;
   padding-top: 7vh;
   overflow: hidden;
+  position: relative;
   @media(min-width: 1291px) {
     background-size: 100vw auto;
   }
+`;
+
+export const BgCover = styled.div`
+  background: ${Color(headerColor).lighten(0.1).toString()};
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  bottom: 0;
 `;
 
 export const Container2 = styled.div`

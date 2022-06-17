@@ -17,6 +17,7 @@ const Service = function Service({ service }:{ service: string }) {
       <Header />
       <Gradient height1="68vh" height2="32vh" />
       <S.BgContainer>
+        <S.BgCover />
         <ContainerMax>
           <S.Container2>
             <ServiceDesc service={thisService} />
