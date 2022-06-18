@@ -10,7 +10,7 @@ export const Container = styled.div`
   transform: translate(50%, 50%);
   border-radius: 5px;
   max-width: 400px;
-  min-width: 270px;
+  // min-width: 270px;
   height: max-content;
   line-height: 1.3;
   width: 90%;
@@ -20,10 +20,7 @@ export const Container = styled.div`
 `;
 
 export const Label1 = styled.div`
-  border-radius: 5px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  font-size: calc(13px + 0.25vw);
+  font-size: calc(11.25px + 0.3vw);
   background: ${Color(headerColor).lighten(7).toString()};
   font-weight: 600;
   padding: 10px 15px;
@@ -37,6 +34,9 @@ export const ServiceSection = styled.div`
   background: ${Color('white').darken(0.15).toString()};
   max-height: 40vh;
   overflow: auto;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
   @media(max-width: 268px) {
     padding: 5px;
   }
@@ -66,13 +66,13 @@ export const ButtonDiv = styled.div`
 
 export const PriceSection = styled.div`
   border-radius: 5px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   background: ${Color(headerColor).lighten(1).toString()};
-  max-height: 30vh;
+  max-height: 40vh;
   color: ${textColor};
-  padding: 15px 15px;
-  padding-bottom: 20px;
+  padding: 22px 25px;
+  padding-bottom: 25px;
   @media(max-width: 268px) {
     padding: 5px;
   }
@@ -97,7 +97,7 @@ export const ArrowCont = styled.div`
   display: flex;
   margin-top: -2px;
   margin-bottom: auto;
-  margin-left: 5px;
+  margin-right: 5px;
   @media(max-width: 350px) {
     margin-top: -1.25%;
   }
@@ -109,16 +109,37 @@ export const ArrowIcon = styled.div`
 
 export const PriceCont = styled.div`
   width: 100%;
+`;
+
+export const Price = styled.div`
+  font-size: calc(17px + 0.95vw);
+  font-weight: 700;
+  font-family: DM Sans;
+  @media(max-width: 268px) {
+    font-size: 12px;
+  }
+`;
+
+export const Fee = styled(Price)`
+  margin-top: 5px;
+  // font-size: calc(20px + 0.95vw);
+`;
+
+export const FlexCont = styled.div`
+  margin-top: 20px;
   display: flex;
-  margin-top: 25px;
 `;
 
 export const SetupCont = styled.div`
-  width: 100%;
+  // width: 100%;
+  padding-right: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-right: 2px solid ${Color(textColor2).darken(0.625).toString()};
+  @media(max-width: 268px) {
+    padding-right: 5px;
+  }
 `;
 
 export const LabelCont = styled.div`
@@ -132,17 +153,32 @@ export const PriceLabel2 = styled.div`
   color: ${Color(textColor2).darken(0.2).toString()};
   margin: auto;
   width: max-content;
-`;
-
-export const Price = styled.div`
-  font-size: calc(18px + 0.85vw);
-  font-weight: 700;
-  font-family: DM Sans;
+  @media(max-width: 268px) {
+    font-size: 9px;
+  }
 `;
 
 export const MaintenanceCont = styled.div`
-  width: 100%;
+  // width: 100%;
+  padding-left: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media(max-width: 268px) {
+    padding-left: 5px;
+  }
+`;
+
+export const SetupTime = styled.div`
+  font-weight: 300;
+  color: ${textColor2};
+  font-size: calc(10.25px + 0.23vw);
+  line-height: 1.3;
+  max-width: 100%;
+  // margin: auto;
+  margin-top: 25px;
+  background: ${Color(headerColor).lighten(2).toString()};
+  padding: 12px 17px; 
+  border-radius: 5px;
+  // text-align: center;
 `;

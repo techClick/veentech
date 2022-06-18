@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import angular from 'assets/angular.png';
 import react from 'assets/react.png';
@@ -56,16 +57,16 @@ export const services = [{
   constDesc: 'automation',
   price: {
     setup: {
-      Nigeria: '₦3m/mo',
-      Africa: '$5k/mo',
-      World1: '$20k/mo',
-      World2: '$10k/mo',
+      Nigeria: <><S.Big>₦3.5m</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$5.5k</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$20k</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$10k</S.Big><S.Small>/mo</S.Small></>,
     },
     fee: {
-      Nigeria: '₦200k/yr',
-      Africa: '$330/yr',
-      World1: '$200/mo',
-      World2: '$100/mo',
+      Nigeria: <><S.Big>₦20k</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$650</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$200</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {
@@ -88,16 +89,16 @@ export const services = [{
   constDesc: 'a business website',
   price: {
     setup: {
-      Nigeria: 'Free',
-      Africa: 'Free',
-      World1: 'Free',
-      World2: 'Free',
+      Nigeria: 'N/A',
+      Africa: 'N/A',
+      World1: 'N/A',
+      World2: 'N/A',
     },
     fee: {
-      Nigeria: '₦75k/yr',
-      Africa: '$125/yr',
-      World1: '$100/mo',
-      World2: '$50/mo',
+      Nigeria: <><S.Big>₦75,000</S.Big><S.Small>/yr</S.Small></>,
+      Africa: <><S.Big>$125</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {
@@ -120,16 +121,16 @@ export const services = [{
   constDesc: 'a custom mobile app',
   price: {
     setup: {
-      Nigeria: 'Free',
-      Africa: 'Free',
-      World1: 'Free',
-      World2: 'Free',
+      Nigeria: 'N/A',
+      Africa: 'N/A',
+      World1: 'N/A',
+      World2: 'N/A',
     },
     fee: {
-      Nigeria: '₦75k/yr',
-      Africa: '$125/yr',
-      World1: '$100/mo',
-      World2: '$50/mo',
+      Nigeria: <><S.Big>₦75,000</S.Big><S.Small>/yr</S.Small></>,
+      Africa: <><S.Big>$125</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {
@@ -151,16 +152,16 @@ export const services = [{
   constDesc: 'our database management',
   price: {
     setup: {
-      Nigeria: 'Free',
-      Africa: 'Free',
-      World1: 'Free',
-      World2: 'Free',
+      Nigeria: 'N/A',
+      Africa: 'N/A',
+      World1: 'N/A',
+      World2: 'N/A',
     },
     fee: {
-      Nigeria: '₦75k/yr',
-      Africa: '$125/yr',
-      World1: '$100/mo',
-      World2: '$50/mo',
+      Nigeria: <><S.Big>₦75,000</S.Big><S.Small>/yr</S.Small></>,
+      Africa: <><S.Big>$125</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {
@@ -196,10 +197,10 @@ export const services = [{
       World2: 'N/A',
     },
     fee: {
-      Nigeria: '₦10k/mo',
-      Africa: '$330/yr',
-      World1: '$200/mo',
-      World2: '$100/mo',
+      Nigeria: <><S.Big>₦10,000</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$330</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$200</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {
@@ -222,16 +223,16 @@ export const services = [{
   constDesc: 'our digital marketing service',
   price: {
     setup: {
-      Nigeria: 'Free',
-      Africa: 'Free',
-      World1: 'Free',
-      World2: 'Free',
+      Nigeria: 'N/A',
+      Africa: 'N/A',
+      World1: 'N/A',
+      World2: 'N/A',
     },
     fee: {
-      Nigeria: '₦200k/yr',
-      Africa: '$330/yr',
-      World1: '$200/mo',
-      World2: '$100/mo',
+      Nigeria: <><S.Big>₦20,000</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$35</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$300</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$150</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 },
@@ -287,16 +288,16 @@ export const services = [{
   constDesc: 'a business email',
   price: {
     setup: {
-      Nigeria: 'Free',
-      Africa: 'Free',
-      World1: 'Free',
-      World2: 'Free',
+      Nigeria: 'N/A',
+      Africa: 'N/A',
+      World1: 'N/A',
+      World2: 'N/A',
     },
     fee: {
-      Nigeria: '₦20k/yr',
-      Africa: '$33/yr',
-      World1: '$200/yr',
-      World2: '$100/yr',
+      Nigeria: <><S.Big>₦30,000</S.Big><S.Small>/yr</S.Small></>,
+      Africa: <><S.Big>$50</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$500</S.Big><S.Small>/yr</S.Small></>,
+      World2: <><S.Big>$250</S.Big><S.Small>/yr</S.Small></>,
     },
   },
 }];

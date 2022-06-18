@@ -1,4 +1,4 @@
-import EscapeButton from 'components/EscapeButton/EscapeButton';
+import EscapeButton from 'views/components/EscapeButton/EscapeButton';
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import { MainButton } from 'styles/styled';
