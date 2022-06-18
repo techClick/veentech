@@ -1,7 +1,12 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setShowPopup } from 'redux/store';
+import Pricing from 'views/components/Pricing/Pricing';
 import * as S from './Explore.styled';
 
 const Explore = function Explore({ service }:{ service: any }) {
+  const dispatch = useDispatch();
+
   return (
     <S.Container>
       <S.PricesCont>
@@ -11,7 +16,11 @@ const Explore = function Explore({ service }:{ service: any }) {
           ?
         </S.PricesDesc>
         <S.PricesBtnDiv>
-          <S.PriceButton>
+          <S.PriceButton onClick={() => dispatch(setShowPopup({
+            component: <Pricing />,
+            exitOnBgClick: true,
+          }))}
+          >
             View pricing
           </S.PriceButton>
         </S.PricesBtnDiv>

@@ -14,7 +14,7 @@ export const Container = styled.div`
   transition: all 0.15s ease-out;
   height: 334px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 5;
   border-radius: 3px;
 `;
 

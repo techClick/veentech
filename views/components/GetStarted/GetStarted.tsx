@@ -1,3 +1,4 @@
+import EscapeButton from 'components/EscapeButton/EscapeButton';
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import { MainButton } from 'styles/styled';
@@ -16,6 +17,7 @@ const GetStarted = function GetStarted() {
       <S.Label1>
         The first step of the process is speaking with you
         and learning about your business.
+        <EscapeButton />
       </S.Label1>
       <S.Label2>
         Fill in the details below to begin the process.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { setShowPopup } from 'redux/store';
 import { setIsShowServices } from 'views/HomePage/redux';
-import ServiceDropdown2 from '../ServiceDropdown2/ServiceDropdown2';
+import ServiceDropdown2 from '../../SideBar/ServiceDropdown2/ServiceDropdown2';
 
 let isShowingMenu = false;
 

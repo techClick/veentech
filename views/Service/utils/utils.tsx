@@ -23,10 +23,10 @@ import youtube from 'assets/youtube.png';
 import fb from 'assets/fb.png';
 import twitter from 'assets/twitter.png';
 import instagram from 'assets/insta.svg';
-import ppro from 'assets/ppro.png';
-import pelements from 'assets/pelements.png';
-import fcutpro from 'assets/fcutpro.png';
-import imov from 'assets/imov.png';
+// import ppro from 'assets/ppro.png';
+// import pelements from 'assets/pelements.png';
+// import fcutpro from 'assets/fcutpro.png';
+// import imov from 'assets/imov.png';
 import gmail from 'assets/gmail.png';
 import outlook from 'assets/outlook.png';
 import hostinger from 'assets/hostinger.svg';
@@ -54,6 +54,20 @@ export const services = [{
   line4: 'We develop low-scale projects in one month.',
   images: [react, angular, node, apple, android, windows],
   constDesc: 'automation',
+  price: {
+    setup: {
+      Nigeria: '₦3m/mo',
+      Africa: '$5k/mo',
+      World1: '$20k/mo',
+      World2: '$10k/mo',
+    },
+    fee: {
+      Nigeria: '₦200k/yr',
+      Africa: '$330/yr',
+      World1: '$200/mo',
+      World2: '$100/mo',
+    },
+  },
 }, {
   name: 'Business Website',
   contact: <Contacts msg={`If you would like more information about our Web Development skills, you can message us
@@ -72,6 +86,20 @@ export const services = [{
   line4: 'We develop low-scale websites in one month.',
   images: [react, angular, node, php, sql, js],
   constDesc: 'a business website',
+  price: {
+    setup: {
+      Nigeria: 'Free',
+      Africa: 'Free',
+      World1: 'Free',
+      World2: 'Free',
+    },
+    fee: {
+      Nigeria: '₦75k/yr',
+      Africa: '$125/yr',
+      World1: '$100/mo',
+      World2: '$50/mo',
+    },
+  },
 }, {
   name: 'Custom Mobile App',
   contact: <Contacts msg={`If you would like more information about our Mobile App Development skills, you can message us
@@ -90,6 +118,20 @@ export const services = [{
   line4: 'We develop low-scale mobile apps in one month.',
   images: [apple, android, react, angular, node, php],
   constDesc: 'a custom mobile app',
+  price: {
+    setup: {
+      Nigeria: 'Free',
+      Africa: 'Free',
+      World1: 'Free',
+      World2: 'Free',
+    },
+    fee: {
+      Nigeria: '₦75k/yr',
+      Africa: '$125/yr',
+      World1: '$100/mo',
+      World2: '$50/mo',
+    },
+  },
 }, {
   name: 'Database Management',
   contact: <Contacts msg={`If you would like more information about our Database Management and
@@ -107,6 +149,20 @@ export const services = [{
   line4: 'We deploy databases in under 24 hours,',
   images: [sql, postgres, mariaDB, mysql, node, php],
   constDesc: 'our database management',
+  price: {
+    setup: {
+      Nigeria: 'Free',
+      Africa: 'Free',
+      World1: 'Free',
+      World2: 'Free',
+    },
+    fee: {
+      Nigeria: '₦75k/yr',
+      Africa: '$125/yr',
+      World1: '$100/mo',
+      World2: '$50/mo',
+    },
+  },
 }, {
   name: 'Data Analysis',
   contact: <Contacts msg={`If you would like more information about our Data Analysis skills, you can message us
@@ -132,6 +188,20 @@ export const services = [{
   ),
   images: [excel, powerBI, python, pandas, pdf, word],
   constDesc: 'our data analytics',
+  price: {
+    setup: {
+      Nigeria: 'N/A',
+      Africa: 'N/A',
+      World1: 'N/A',
+      World2: 'N/A',
+    },
+    fee: {
+      Nigeria: '₦10k/mo',
+      Africa: '$330/yr',
+      World1: '$200/mo',
+      World2: '$100/mo',
+    },
+  },
 }, {
   name: 'Digital Marketing',
   contact: <Contacts msg={`If you would like more information about our Digital Marketing service, you can message us
@@ -150,25 +220,55 @@ export const services = [{
   line4: 'We deploy search and display ads in under 24 hours.',
   images: [adwords, google, youtube, fb, twitter, instagram],
   constDesc: 'our digital marketing service',
-}, {
-  name: 'Video Advertising',
-  contact: <Contacts msg={`If you would like more information about our Video Advertising skills, you can message us
-    or call us.`}
-  />,
-  description: `Take advantage of tools like iMovie and Final Cut Pro.
-    Create attractive and informative videos that grow your consumer base via YouTube.`,
-  icon: faEnvelope,
-  path: '/services/videoads',
-  line1: 'Grow your consumer base with our YouTube Video Advertising service.',
-  line2: `We have years of experience developing curative videos that direct consumers to
-    your business.`,
-  line3: `Out Video Advertising team are experts with tools such as Premier Pro, 
-    Premier elements, Final Cut Pro, iMovie and more.
-    Utilize the power of Video Advertising and drive success in your business`,
-  line4: 'We create 30 second videos in under two weeks.',
-  images: [adwords, youtube, ppro, pelements, fcutpro, imov],
-  constDesc: 'our video advertising',
-}, {
+  price: {
+    setup: {
+      Nigeria: 'Free',
+      Africa: 'Free',
+      World1: 'Free',
+      World2: 'Free',
+    },
+    fee: {
+      Nigeria: '₦200k/yr',
+      Africa: '$330/yr',
+      World1: '$200/mo',
+      World2: '$100/mo',
+    },
+  },
+},
+// , {
+//   name: 'Video Advertising',
+//   contact: <Contacts msg={`If you would like more information about our
+//     Video Advertising skills, you can message us or call us.`}
+//   />,
+//   description: `Take advantage of tools like iMovie and Final Cut Pro.
+//     Create attractive and informative videos that grow your consumer base via YouTube.`,
+//   icon: faEnvelope,
+//   path: '/services/videoads',
+//   line1: 'Grow your consumer base with our YouTube Video Advertising service.',
+//   line2: `We have years of experience developing curative videos that direct consumers to
+//     your business.`,
+//   line3: `Out Video Advertising team are experts with tools such as Premier Pro,
+//     Premier elements, Final Cut Pro, iMovie and more.
+//     Utilize the power of Video Advertising and drive success in your business`,
+//   line4: 'We create 30 second videos in under two weeks.',
+//   images: [adwords, youtube, ppro, pelements, fcutpro, imov],
+//   constDesc: 'our video advertising',
+// price: {
+//   setup: {
+//     Nigeria: '₦3m/mo',
+//     Africa: '$5k/mo',
+//     World1: '$20k/mo',
+//     World2: '$10k/mo',
+//   },
+//   fee: {
+//     Nigeria: '₦200k/yr',
+//     Africa: '$330/yr',
+//     World1: '$200/mo',
+//     World2: '$100/mo',
+//   },
+// },
+// }
+{
   name: 'Business Email',
   contact: <Contacts msg={`If you would like more information about setting up a Business Email, you can message us
     or call us.`}
@@ -185,4 +285,18 @@ export const services = [{
   line4: 'We deploy a maximum 100 email reciepients in 24 hours.',
   images: [gmail, outlook, hostinger, yandex, zoho, fastmail],
   constDesc: 'a business email',
+  price: {
+    setup: {
+      Nigeria: 'Free',
+      Africa: 'Free',
+      World1: 'Free',
+      World2: 'Free',
+    },
+    fee: {
+      Nigeria: '₦20k/yr',
+      Africa: '$33/yr',
+      World1: '$200/yr',
+      World2: '$100/yr',
+    },
+  },
 }];

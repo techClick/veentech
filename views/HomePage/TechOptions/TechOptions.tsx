@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { setShowPopup } from 'redux/store';
 import { ContainerMax } from 'styles/styled';
 import GetStarted from 'views/components/GetStarted/GetStarted';
+import Pricing from 'views/components/Pricing/Pricing';
 import { services } from 'views/Service/utils/utils';
 import * as S from './TechOptions.styled';
 
@@ -51,13 +52,23 @@ const TechOptions = function TechOptions() {
           If you are not sure about which service your business needs, our
           team of consultants can
           {' '}
-          <S.WhitePart>help</S.WhitePart>
+          <S.WhitePart onClick={() => dispatch(setShowPopup({
+            component: <GetStarted />,
+            exitOnBgClick: true,
+          }))}
+          >
+            help
+          </S.WhitePart>
           .
         </S.Help>
         <S.PricesCont>
           <S.PricesDesc>Wonder about the cost of our services?</S.PricesDesc>
           <S.PriceBtnDiv>
-            <S.PriceButton>
+            <S.PriceButton onClick={() => dispatch(setShowPopup({
+              component: <Pricing />,
+              exitOnBgClick: true,
+            }))}
+            >
               Explore prices
             </S.PriceButton>
           </S.PriceBtnDiv>
