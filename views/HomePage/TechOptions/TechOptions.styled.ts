@@ -175,6 +175,7 @@ export const PricesCont = styled.div`
   border-radius: 8px;
   width: max-content;
   max-width: 100%;
+  display: inline-block;
 `;
 
 export const PricesDesc = styled.div`

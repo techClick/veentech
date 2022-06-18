@@ -48,6 +48,18 @@ const TechOptions = function TechOptions() {
             </S.TechOption>
           ))
         }
+        <S.PricesCont>
+          <S.PricesDesc>Wonder about the cost of our services?</S.PricesDesc>
+          <S.PriceBtnDiv>
+            <S.PriceButton onClick={() => dispatch(setShowPopup({
+              component: <Pricing />,
+              exitOnBgClick: true,
+            }))}
+            >
+              Explore prices
+            </S.PriceButton>
+          </S.PriceBtnDiv>
+        </S.PricesCont>
         <S.Help>
           If you are not sure about which service your business needs, our
           team of consultants can
@@ -61,18 +73,6 @@ const TechOptions = function TechOptions() {
           </S.WhitePart>
           .
         </S.Help>
-        <S.PricesCont>
-          <S.PricesDesc>Wonder about the cost of our services?</S.PricesDesc>
-          <S.PriceBtnDiv>
-            <S.PriceButton onClick={() => dispatch(setShowPopup({
-              component: <Pricing />,
-              exitOnBgClick: true,
-            }))}
-            >
-              Explore prices
-            </S.PriceButton>
-          </S.PriceBtnDiv>
-        </S.PricesCont>
       </ContainerMax>
     </S.MainContainer>
   );
