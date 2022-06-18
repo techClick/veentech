@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/globals.css';
+import 'react-phone-input-2/lib/style.css';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { Provider } from 'react-redux';

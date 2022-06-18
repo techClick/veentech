@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PhoneInput from 'react-phone-input-2';
 import { MainButton } from 'styles/styled';
 import * as S from './GetStarted.styled';
 
 const GetStarted = function GetStarted() {
+  const [phoneNumber, setPhoneNumber] = useState<any>();
+  const phoneStyle = {
+    height: '45px',
+    width: '100%',
+    fontFamily: 'Poppins',
+  };
+
   return (
     <S.Container>
       <S.Label1>
@@ -15,16 +23,21 @@ const GetStarted = function GetStarted() {
       <S.InputSection>
         <S.Detail>Name</S.Detail>
         <S.Input
-          placeholder="Required"
+          placeholder="Entry required"
         />
         <S.Detail2>Email</S.Detail2>
         <S.Input
-          placeholder="Required"
+          placeholder="Entry required"
         />
-        <S.Detail2>Phone</S.Detail2>
-        <S.Input
-          placeholder="Optional"
+        <S.Detail2>Phone (optional)</S.Detail2>
+        <PhoneInput
+          country="us"
+          placeholder="Entry optional"
+          value={phoneNumber}
+          onChange={setPhoneNumber}
+          inputStyle={phoneStyle}
         />
+
         <S.ButtonDiv>
           <MainButton>
             Submit

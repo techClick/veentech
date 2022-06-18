@@ -1,6 +1,6 @@
 import Color from 'color';
 import styled from 'styled-components';
-import { headerColor, textColor } from 'styles/styled';
+import { headerColor } from 'styles/styled';
 
 export const Container = styled.div`
   position: fixed;
@@ -40,7 +40,7 @@ export const InputSection = styled.div`
   padding: 25px 30px;
   border-radius: 5px;
   margin-top: 25px;
-  background: ${Color('white').darken(0.2).toString()};//${Color(headerColor).lighten(2).toString()};
+  background: ${Color('white').darken(0.15).toString()};
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   @media(max-width: 268px) {
@@ -53,13 +53,13 @@ export const Detail = styled.div`
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 1px;
-  color: ${headerColor};// ${textColor};
+  margin-bottom: 2px;
+  color: ${headerColor};
 `;
 
 export const Input = styled.input`
   width: 100%;
-  max-width: 205px;
+  max-width: 225px;
   height: 38px;
   font-family: Poppins;
   font-size: 14.5px;
@@ -68,6 +68,10 @@ export const Input = styled.input`
 
 export const Detail2 = styled(Detail)`
   margin-top: 12px;
+`;
+
+export const phoneDiv = styled.div`
+  height: 8px;
 `;
 
 export const ButtonDiv = styled(Detail)`
