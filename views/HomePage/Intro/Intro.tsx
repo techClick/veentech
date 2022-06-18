@@ -1,9 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setShowPopup } from 'redux/store';
 import { Container, MainButton } from 'styles/styled';
+import GetStarted from 'views/components/GetStarted/GetStarted';
 import Gradient from '../../components/Gradient/Gradient';
 import * as S from './Intro.styled';
 
 const Intro = function Intro() {
+  const dispatch = useDispatch();
+
   return (
     <>
       <Gradient />
@@ -22,7 +27,11 @@ const Intro = function Intro() {
             >
               Learn more
             </S.Button>
-            <MainButton>
+            <MainButton onClick={() => dispatch(setShowPopup({
+              component: <GetStarted />,
+              exitOnBgClick: true,
+            }))}
+            >
               Grow my business
             </MainButton>
           </S.ButtonDiv>

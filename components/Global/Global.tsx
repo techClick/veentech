@@ -27,7 +27,10 @@ const Global = function Global({ children }:{ children: any }) {
           {showPopup.component
             && (
               <>
-                <Background />
+                <Background onClick={() => (
+                  showPopup.exitOnBgClick && dispatch(setShowPopup({}))
+                )}
+                />
                 {showPopup.component}
               </>
             )}

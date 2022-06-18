@@ -11,10 +11,10 @@ export const baseColor = '#071542';
 export const sideBarColor = Color(headerColor).lighten(2.5).toString();
 export const buttonColor = '#3795E0';
 export const orange = Color('#DC4D18').darken(0.05).toString();
-export const textColor = Color('white').darken(0.215).toString();
-export const textColor2 = Color('white').darken(0.35).toString();
-export const textColor3 = Color('white').darken(0.1).toString();
-export const textColor4 = Color('white').darken(0.275).toString();
+export const textColor = Color('white').darken(0.115).toString();
+export const textColor2 = Color('white').darken(0.25).toString();
+export const textColor3 = Color('white').darken(0).toString();
+export const textColor4 = Color('white').darken(0.175).toString();
 export const columnRes_HPConsult = '702px';
 
 const opacityIn = keyframes`
@@ -30,7 +30,7 @@ export const Background = styled.div<any>`
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   bottom: 0;
   left: 0;
   background: black;

@@ -1,8 +1,13 @@
 import { StaticImageData } from 'next/image';
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setShowPopup } from 'redux/store';
+import GetStarted from 'views/components/GetStarted/GetStarted';
 import * as S from './ServiceDesc.styled';
 
 const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
+  const dispatch = useDispatch();
+
   return (
     <>
       <S.ServiceName>
@@ -30,7 +35,11 @@ const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
           <S.Line1>{service?.line3}</S.Line1>
           <S.Line2>{service?.line4}</S.Line2>
           <S.ButtonDiv>
-            <S.MainButton>
+            <S.MainButton onClick={() => dispatch(setShowPopup({
+              component: <GetStarted />,
+              exitOnBgClick: true,
+            }))}
+            >
               Get started
             </S.MainButton>
           </S.ButtonDiv>

@@ -1,12 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setShowPopup } from 'redux/store';
 import { ContainerMax } from 'styles/styled';
+import GetStarted from 'views/components/GetStarted/GetStarted';
 import { services } from 'views/Service/utils/utils';
 import * as S from './TechOptions.styled';
 
 const TechOptions = function TechOptions() {
   const router = useRouter();
+  const dispatch = useDispatch();
 
   return (
     <S.MainContainer>
@@ -32,7 +36,11 @@ const TechOptions = function TechOptions() {
                 <S.Button onClick={() => router.push(option.path)}>
                   Learn more
                 </S.Button>
-                <S.MainButton>
+                <S.MainButton onClick={() => dispatch(setShowPopup({
+                  component: <GetStarted />,
+                  exitOnBgClick: true,
+                }))}
+                >
                   Get started
                 </S.MainButton>
               </S.ButtonDiv>
