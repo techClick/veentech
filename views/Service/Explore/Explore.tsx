@@ -17,7 +17,7 @@ const Explore = function Explore({ service }:{ service: any }) {
         </S.PricesDesc>
         <S.PricesBtnDiv>
           <S.PriceButton onClick={() => dispatch(setShowPopup({
-            component: <Pricing />,
+            component: <Pricing useService={service.name} />,
             exitOnBgClick: true,
           }))}
           >

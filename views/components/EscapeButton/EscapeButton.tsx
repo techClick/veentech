@@ -6,14 +6,15 @@ import { setShowPopup } from 'redux/store';
 import * as S from './EscapeButton.styled';
 
 const EscapeButton = function EscapeButton(
-  { escapeAction }
+  { escapeAction, whiteX }
   :
-  { escapeAction?: Function },
+  { escapeAction?: Function, whiteX?: boolean },
 ) {
   const dispatch = useDispatch();
 
   return (
     <S.Container
+      whiteX={whiteX}
       onClick={() => {
         if (escapeAction) escapeAction();
         dispatch(setShowPopup({}));

@@ -29,7 +29,7 @@ export const PricesCont = styled.div`
 `;
 
 export const PricesDesc = styled.div`
-  font-size: calc(12px + 0.175vw);
+  font-size: calc(12.5px + 0.175vw);
   font-weight: 300;
   color: ${textColor2};
 `;

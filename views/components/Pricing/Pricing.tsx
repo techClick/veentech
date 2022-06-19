@@ -4,8 +4,8 @@ import { getContinent, getCountry } from 'views/Service/utils/countryUtils';
 import { services } from 'views/Service/utils/utils';
 import * as S from './Pricing.styled';
 
-const Pricing = function Pricing() {
-  const [selectedService, setSelectedService] = useState<string>('Automation');
+const Pricing = function Pricing({ useService }:{ useService?: string}) {
+  const [selectedService, setSelectedService] = useState<string>(useService || 'Business Email');
   const country = getCountry();
   const continent = getContinent();
   let priceKey = 'Nigeria';
@@ -35,7 +35,7 @@ const Pricing = function Pricing() {
           </S.ArrowCont> */}
           <S.PriceLabel>
             {selectedService}
-            {' cost'}
+            {/* {' cost'} */}
           </S.PriceLabel>
         </S.PriceLabelSection>
         <S.PriceCont>
@@ -69,7 +69,7 @@ const Pricing = function Pricing() {
       </S.PriceSection>
       <S.Label1>
         Select a service below to view its cost
-        <EscapeButton />
+        <EscapeButton whiteX />
       </S.Label1>
       <S.ServiceSection>
         {

@@ -76,6 +76,9 @@ export const PriceSection = styled.div`
   @media(max-width: 268px) {
     padding: 5px;
   }
+  @media(max-width: 307px) {
+    padding: 10px;
+  }
 `;
 
 export const PriceLabelSection = styled.div`
@@ -121,7 +124,8 @@ export const Price = styled.div`
 `;
 
 export const Fee = styled(Price)`
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: -12px;
   // font-size: calc(20px + 0.95vw);
 `;
 

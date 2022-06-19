@@ -176,6 +176,7 @@ export const PricesCont = styled.div`
   width: max-content;
   max-width: 100%;
   display: inline-block;
+  margin-bottom: 25px;
 `;
 
 export const PricesDesc = styled.div`

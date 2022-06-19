@@ -12,7 +12,7 @@ export const Container = styled.div`
   width: 220px;
   height: 0px;
   transition: all 0.15s ease-out;
-  height: 334px;
+  height: 292.5px;
   cursor: pointer;
   z-index: 5;
   border-radius: 3px;

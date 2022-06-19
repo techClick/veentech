@@ -8,7 +8,7 @@ export const Container = styled.div`
   bottom: -0px;
   transform: translateY(100%);
   overflow: hidden;
-  background: ${Color(sideBarColor).lighten(1).toString()};
+  background: ${Color(sideBarColor).lighten(1.2).toString()};
   width: 220px;
   height: 0px;
   transition: all 0.15s ease-out;

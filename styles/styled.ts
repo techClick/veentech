@@ -71,6 +71,7 @@ export const Container = styled.div`
   max-width: ${contMaxWidth};
   z-index: 1;
   color: ${textColor};
+  min-height: 630px;
 `;
 
 export const ContainerMax = styled.div`

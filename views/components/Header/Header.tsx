@@ -19,7 +19,7 @@ const Header = function Header() {
     const servicesDropdown = document.getElementById('services');
     if (servicesDropdown) {
       if (isShowServices) {
-        servicesDropdown.style.height = '334.5px';
+        servicesDropdown.style.height = '292.5px';
         return;
       }
       servicesDropdown.style.height = '0px';

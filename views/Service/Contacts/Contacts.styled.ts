@@ -10,7 +10,8 @@ export const MoreCont = styled.div`
   padding-top: 23px;
   width: 100%;
   max-width: max-content;
-  margin-top: 30px;
+  margin: auto;
+  margin-top: 35px;
   color: ${textColor2};
   border-radius: 5px;
   max-width: 560px;
@@ -74,9 +75,6 @@ export const CallButton = styled.div`
 
 export const NumberCont = styled.div`
   display: flex;
-  //margin-top: 15px; // to be used when showing number, even below ones
-  //padding: 8px 15px;
-  //padding-right: 18px;
   background: ${Color(detailsColor).lighten(0.8).toString()};
   border-radius: 3px;
   width: max-content;

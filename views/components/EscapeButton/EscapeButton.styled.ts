@@ -1,12 +1,12 @@
 import Color from 'color';
 import styled from 'styled-components';
-import { headerColor } from 'styles/styled';
+import { headerColor, textColor } from 'styles/styled';
 
-export const Container = styled.div`
+export const Container = styled.div<any>`
   position: absolute;
   right: 0px;
   top: -5px;
-  color: ${headerColor};
+  color: ${(props) => props.whiteX ? textColor : headerColor};
   cursor: pointer;
   &:hover {
     color: ${Color('red').lighten(0.4).toString()};

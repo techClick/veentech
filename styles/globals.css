@@ -21,3 +21,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+body::-webkit-scrollbar, div::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+body::-webkit-scrollbar-track, div::-webkit-scrollbar-track {
+  background: rgb(153, 153, 153);
+}
+
+body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb {
+  background: rgb(43, 43, 43); 
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb:hover, div::-webkit-scrollbar-thumb:hover {
+  background: rgb(15, 15, 15); 
+}

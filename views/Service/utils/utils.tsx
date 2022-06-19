@@ -58,12 +58,12 @@ export const services = [{
   price: {
     setup: {
       Nigeria: <><S.Big>₦3.5m</S.Big><S.Small>/mo</S.Small></>,
-      Africa: <><S.Big>$5.5k</S.Big><S.Small>/mo</S.Small></>,
-      World1: <><S.Big>$20k</S.Big><S.Small>/mo</S.Small></>,
-      World2: <><S.Big>$10k</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$5,500</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$20,000</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$10,000</S.Big><S.Small>/mo</S.Small></>,
     },
     fee: {
-      Nigeria: <><S.Big>₦20k</S.Big><S.Small>/mo</S.Small></>,
+      Nigeria: <><S.Big>₦20,000</S.Big><S.Small>/mo</S.Small></>,
       Africa: <><S.Big>$650</S.Big><S.Small>/yr</S.Small></>,
       World1: <><S.Big>$200</S.Big><S.Small>/mo</S.Small></>,
       World2: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
@@ -149,7 +149,7 @@ export const services = [{
     on platforms such as MySQL, MSSQL, PostgreSQL, NoSQL, Maria DB and more.`,
   line4: 'We deploy databases in under 24 hours,',
   images: [sql, postgres, mariaDB, mysql, node, php],
-  constDesc: 'our database management',
+  constDesc: 'our database management service',
   price: {
     setup: {
       Nigeria: 'N/A',
@@ -158,10 +158,10 @@ export const services = [{
       World2: 'N/A',
     },
     fee: {
-      Nigeria: <><S.Big>₦75,000</S.Big><S.Small>/yr</S.Small></>,
-      Africa: <><S.Big>$125</S.Big><S.Small>/yr</S.Small></>,
-      World1: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
-      World2: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
+      Nigeria: <><S.Big>₦30,000</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$500</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$250</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {
@@ -229,14 +229,14 @@ export const services = [{
       World2: 'N/A',
     },
     fee: {
-      Nigeria: <><S.Big>₦20,000</S.Big><S.Small>/mo</S.Small></>,
-      Africa: <><S.Big>$35</S.Big><S.Small>/mo</S.Small></>,
-      World1: <><S.Big>$300</S.Big><S.Small>/mo</S.Small></>,
-      World2: <><S.Big>$150</S.Big><S.Small>/mo</S.Small></>,
+      Nigeria: <><S.Big>₦30,000</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$500</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$250</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 },
-// , {
+//  {
 //   name: 'Video Advertising',
 //   contact: <Contacts msg={`If you would like more information about our
 //     Video Advertising skills, you can message us or call us.`}
@@ -268,7 +268,7 @@ export const services = [{
 //     World2: '$100/mo',
 //   },
 // },
-// }
+// },
 {
   name: 'Business Email',
   contact: <Contacts msg={`If you would like more information about setting up a Business Email, you can message us
