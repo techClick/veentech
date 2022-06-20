@@ -68,7 +68,7 @@ export const SkillLogoCont = styled.div<any>`
   align-items: center;
   width: 50%;
   height: calc(100% / 3);
-  transform: translateY(${(props) => props.adjustY && '-4px'});
+  transform: translateY(${(props) => props.adjustY && '-3px'});
   @media(max-width: ${columnRes}) {
     width: calc(100% / 6);
     height: max-content;

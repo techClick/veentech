@@ -1,13 +1,12 @@
 import React from 'react';
-// import logo from 'assets/topdevafrica22.png';
-// import logo2 from 'assets/topdevafrica23.png';
+import logo from 'assets/logo.png';
 import * as S from './Logo.styled';
 
-const Logo = function Logo({ width }:{ width: string }) {
+const Logo = function Logo({ width, fontSize }:{ width?: string, fontSize?: string }) {
   return (
     <S.Container width={width}>
-      {/* <S.Image src={[logo, logo2][index].src} /> */}
-      <S.Label>VEENTECH</S.Label>
+      <S.Image src={logo.src} width={width} />
+      <S.Label fontSize={fontSize}>VEENTECH</S.Label>
     </S.Container>
   );
 };

@@ -11,7 +11,7 @@ export const MoreCont = styled.div`
   width: 100%;
   max-width: max-content;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 15px;
   color: ${textColor2};
   border-radius: 5px;
   max-width: 560px;

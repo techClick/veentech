@@ -22,7 +22,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 767px) {
   body::-webkit-scrollbar, div::-webkit-scrollbar {
     width: 12px;
     height: 12px;

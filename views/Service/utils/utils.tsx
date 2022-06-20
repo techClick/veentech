@@ -199,10 +199,10 @@ export const services = [{
       World2: 'N/A',
     },
     fee: {
-      Nigeria: <><S.Big>₦10,000</S.Big><S.Small>/mo</S.Small></>,
-      Africa: <><S.Big>$330</S.Big><S.Small>/yr</S.Small></>,
-      World1: <><S.Big>$200</S.Big><S.Small>/mo</S.Small></>,
-      World2: <><S.Big>$100</S.Big><S.Small>/mo</S.Small></>,
+      Nigeria: <><S.Big>₦50,000</S.Big><S.Small>/mo</S.Small></>,
+      Africa: <><S.Big>$500</S.Big><S.Small>/yr</S.Small></>,
+      World1: <><S.Big>$500</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$250</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 }, {

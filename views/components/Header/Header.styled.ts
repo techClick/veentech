@@ -37,7 +37,7 @@ export const Menu = styled.div`
 export const LogoCont = styled.div`
   width: max-content;
   height: 100%;
-  margin-left: 5.75%;
+  margin-left: 4.75%;
   display: flex;
   justify-content: center;
   align-items: center;

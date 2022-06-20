@@ -38,10 +38,10 @@ export const BgContainer3 = styled.div`
   min-height: 100%;
   height: max-content;
   margin-top: -1px;
-  box-shadow: inset 0 -300px 7px -7px ${headerColor};
+  box-shadow: inset 0 -300px 4px -4px ${headerColor};
   padding-bottom: 25px;
   @media (max-width: 565px) {
     background-position: center top;
-    box-shadow: inset 0 -330px 7px -7px ${headerColor};
+    box-shadow: inset 0 -340px 4px -4px ${headerColor};
   }
 `;

@@ -29,7 +29,7 @@ const Header = function Header() {
   return (
     <S.Container id="header">
       <S.RelativeContainer>
-        <MediaQuery maxWidth={570.9}>
+        <MediaQuery maxWidth={767}>
           <S.MenuContainer>
             <S.Menu onClick={() => {
               moveSideBar(false);
@@ -39,9 +39,9 @@ const Header = function Header() {
             </S.Menu>
           </S.MenuContainer>
         </MediaQuery>
-        <MediaQuery minWidth={571}>
+        <MediaQuery minWidth={767.1}>
           <S.LogoCont onClick={() => router.push('/')}>
-            <Logo width="85px" />
+            <Logo width="20px" />
           </S.LogoCont>
           <S.TabsContainer>
             {

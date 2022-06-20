@@ -1,5 +1,5 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import * as S from './Social.styled';
@@ -21,7 +21,7 @@ const Social = function Social() {
           <FontAwesomeIcon icon={faFacebookF as IconDefinition} size="2x" />
         </S.Icon>
       </S.IconContainer>
-      <S.IconContainer
+      {/* <S.IconContainer
         onClick={() => window.open('https://twitter.com/topdevafrica1/', '_blank')}
       >
         <S.Icon>
@@ -36,7 +36,7 @@ const Social = function Social() {
         <S.Icon>
           <FontAwesomeIcon icon={faInstagram as IconDefinition} size="2x" />
         </S.Icon>
-      </S.IconContainer>
+      </S.IconContainer> */}
     </S.Container>
   );
 };

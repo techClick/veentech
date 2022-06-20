@@ -14,7 +14,7 @@ export const Container = styled.div<any>`
 `;
 
 export const ClearIcon = styled.div<any>`
-  transform: scaleX(0.35) scaleY(0.3);
+  transform: scaleX(0.45) scaleY(0.4);
   margin-left: 1px;
   margin-top: 1px;
 `;

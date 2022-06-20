@@ -12,7 +12,7 @@ const SideBar = function SideBar() {
         <RelativeContainer>
           <Tabs />
           <S.LogoCont onClick={() => moveSideBar(true)}>
-            <Logo width="110px" />
+            <Logo width="25px" fontSize="14px" />
           </S.LogoCont>
         </RelativeContainer>
       </S.Container>

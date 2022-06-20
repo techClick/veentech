@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import { services } from 'views/Service/utils/utils';
 import Logo from '../Logo/Logo';
 import * as S from './Footer.styled';
 import Location from './Location/Location';
@@ -15,7 +16,7 @@ function Footer() {
         <S.FooterContainer>
           <S.FooterSectionContainer>
             <S.FooterSection2>
-              <S.JoinUs2><Logo width="135px" /></S.JoinUs2>
+              <S.JoinUs2><Logo width="28px" fontSize="22px" /></S.JoinUs2>
               <Social />
               <Location />
             </S.FooterSection2>
@@ -24,17 +25,31 @@ function Footer() {
                 <S.FooterRightSection3>
                   <S.FooterSection $left>
                     <S.Label>FOR BUSINESSES</S.Label>
-                    <S.Link>Automation</S.Link>
-                    <S.Link>Business Website</S.Link>
-                    <S.Link>Custom Mobile App</S.Link>
-                    <S.Link>Database Warehousing</S.Link>
-                    <S.aLink>Business Email</S.aLink>
-                    <S.aLink>Digital Advertising</S.aLink>
+                    {
+                      services.map((service, i) => {
+                        if (i < 5) {
+                          return (
+                            <S.Link onClick={() => router.push(service.path)}>
+                              {service.name}
+                            </S.Link>
+                          );
+                        }
+                      })
+                    }
                   </S.FooterSection>
                   <S.FooterSection22>
                     <S.Label>{' '}</S.Label>
-                    <S.Link>Data Analytics</S.Link>
-                    <S.aLink>Video Advertising</S.aLink>
+                    {
+                      services.map((service, i) => {
+                        if (i > 4) {
+                          return (
+                            <S.Link onClick={() => router.push(service.path)}>
+                              {service.name}
+                            </S.Link>
+                          );
+                        }
+                      })
+                    }
                   </S.FooterSection22>
                   <S.FooterSection $left>
                     <S.Label>MORE</S.Label>
@@ -50,19 +65,20 @@ function Footer() {
       <MediaQuery maxWidth={900}>
         <S.FooterContainer>
           <S.FooterSection2>
-            <S.JoinUs><Logo width="135px" /></S.JoinUs>
+            <S.JoinUs><Logo width="28px" fontSize="22px" /></S.JoinUs>
             <Social />
           </S.FooterSection2>
           <S.FooterSection>
             <S.Label>FOR BUSINESSES</S.Label>
-            <S.Link>Automation</S.Link>
-            <S.Link>Business Website</S.Link>
-            <S.Link>Custom Mobile App</S.Link>
-            <S.Link>Database Warehousing</S.Link>
-            <S.aLink>Business Email</S.aLink>
-            <S.aLink>Digital Advertising</S.aLink>
-            <S.Link>Data Analytics</S.Link>
-            <S.aLink>Video Advertising</S.aLink>
+            {
+              services.map((service) => {
+                return (
+                  <S.Link onClick={() => router.push(service.path)}>
+                    {service.name}
+                  </S.Link>
+                );
+              })
+            }
           </S.FooterSection>
           <S.FooterSection>
             <S.Label>MORE</S.Label>

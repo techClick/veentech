@@ -19,7 +19,7 @@ const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
             {
               service.images.map((img: StaticImageData, i: number) => {
                 const adjustY: boolean = service.name === 'Data Analysis'
-                  && (i === 1 || i === 3 || i === 5);
+                  && (i === 2);
                 return (
                   <S.SkillLogoCont key={`logo_${i}`} adjustY={adjustY}>
                     <S.SkillLogo src={img.src} />
