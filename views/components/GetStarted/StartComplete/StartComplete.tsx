@@ -8,7 +8,7 @@ const StartComplete = function StartComplete() {
 
   return (
     <S.Container>
-      <S.Header>SUCCESS</S.Header>
+      <S.Header>MESSAGE SENT</S.Header>
       <S.Desc>
         The process has started.
         <br />

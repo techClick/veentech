@@ -87,7 +87,7 @@ export const PriceLabelSection = styled.div`
 `;
 
 export const PriceLabel = styled.div`
-  font-size: calc(12px + 0.25vw);
+  font-size: calc(14px + 0.25vw);
   font-family: Poppins;
   text-transform: uppercase;
   font-weight: 600;
@@ -126,6 +126,9 @@ export const Price = styled.div`
 export const Fee = styled(Price)`
   margin-top: 10px;
   margin-bottom: -12px;
+  @media(max-width: 307px) {
+    margin-bottom: -5px;
+  }
   // font-size: calc(20px + 0.95vw);
 `;
 
@@ -152,7 +155,7 @@ export const LabelCont = styled.div`
 
 export const PriceLabel2 = styled.div`
   font-family: Poppins;
-  font-size: calc(12px + 0.25vw);
+  font-size: calc(11px + 0.25vw);
   font-weight: 700;
   color: ${Color(textColor2).darken(0.2).toString()};
   margin: auto;

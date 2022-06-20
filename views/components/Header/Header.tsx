@@ -29,7 +29,7 @@ const Header = function Header() {
   return (
     <S.Container id="header">
       <S.RelativeContainer>
-        <MediaQuery maxWidth={570}>
+        <MediaQuery maxWidth={570.9}>
           <S.MenuContainer>
             <S.Menu onClick={() => {
               moveSideBar(false);
