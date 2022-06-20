@@ -28,7 +28,7 @@ const Intro = function Intro() {
               Learn more
             </S.Button>
             <MainButton onClick={() => dispatch(setShowPopup({
-              component: <GetStarted />,
+              component: <GetStarted type="Grow" />,
               exitOnBgClick: true,
             }))}
             >

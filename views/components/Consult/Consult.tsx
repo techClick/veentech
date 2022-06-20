@@ -25,7 +25,7 @@ const Consult = function Consult({ topPad }:{ topPad?: string }) {
                 </S.Text>
                 <S.ConsultUs
                   onClick={() => dispatch(setShowPopup({
-                    component: <GetStarted />,
+                    component: <GetStarted type="Consult" />,
                     exitOnBgClick: true,
                   }))}
                 >

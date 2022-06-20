@@ -38,7 +38,7 @@ const TechOptions = function TechOptions() {
                   Learn more
                 </S.Button>
                 <S.MainButton onClick={() => dispatch(setShowPopup({
-                  component: <GetStarted />,
+                  component: <GetStarted type={option.name} />,
                   exitOnBgClick: true,
                 }))}
                 >
@@ -51,10 +51,12 @@ const TechOptions = function TechOptions() {
         <S.PricesCont>
           <S.PricesDesc>Wonder about the cost of our services?</S.PricesDesc>
           <S.PriceBtnDiv>
-            <S.PriceButton onClick={() => dispatch(setShowPopup({
-              component: <Pricing />,
-              exitOnBgClick: true,
-            }))}
+            <S.PriceButton onClick={() => {
+              dispatch(setShowPopup({
+                component: <Pricing />,
+                exitOnBgClick: true,
+              }));
+            }}
             >
               Explore prices
             </S.PriceButton>
@@ -65,7 +67,7 @@ const TechOptions = function TechOptions() {
           team of consultants can
           {' '}
           <S.WhitePart onClick={() => dispatch(setShowPopup({
-            component: <GetStarted />,
+            component: <GetStarted type="help" />,
             exitOnBgClick: true,
           }))}
           >

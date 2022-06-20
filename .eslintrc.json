@@ -46,6 +46,7 @@
       "no-confusing-arrow": 0,
       "react/no-children-prop": 0,
       "react/prop-types": 0,
-      "no-promise-executor-return": 0
+      "no-promise-executor-return": 0,
+      "function-paren-newline": 0
     }
 }

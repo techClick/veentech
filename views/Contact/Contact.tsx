@@ -1,14 +1,50 @@
 import React, { useState } from 'react';
 import MediaQuery from 'react-responsive';
+import { useDispatch } from 'react-redux';
+import { Message } from 'types/types';
+import { toast } from 'react-toastify';
+import { isValidEmail } from 'utils/utils';
+import { setShowPopup } from 'redux/store';
+import SendingMessage from 'components/SendingMessage/SendingMessage';
 import Header from 'views/components/Header/Header';
 import { Container } from 'styles/styled';
 import Gradient from 'views/components/Gradient/Gradient';
 import * as S from './Contact.styled';
 import { all_lowRes } from './Contact.styled';
+import { sendContactMessage } from './utils';
+import ContactComplete from './ContactComplete/ContactComplete';
 
 const Contact = function Contact() {
   const placeHolders = ['Company / Name *', 'Email *', 'Subject (Optional)', 'Enter message *'];
   const [input, setInput] = useState<any>(placeHolders.map(() => ''));
+  const dispatch = useDispatch();
+
+  const sendMessage = async () => {
+    let error = '';
+    if (!input[3]) error = 'Message required';
+    if (!input[1]) error = 'Email required';
+    if (input[1] && !isValidEmail(input[1])) error = 'Email is invalid';
+    if (!input[0]) error = 'Name required';
+    if (error) {
+      toast(error, { type: 'error' });
+      return;
+    }
+    dispatch(setShowPopup({ component: <SendingMessage /> }));
+    const message: Message = {
+      company: input[0],
+      email: input[1],
+      subject: input[2] || 'NO SUBJECT',
+      text: input[3],
+    };
+    const response: any = await dispatch(sendContactMessage(message));
+    dispatch(setShowPopup({}));
+    if (response.status === 'success') {
+      dispatch(setShowPopup({ component: <ContactComplete /> }));
+      setInput(placeHolders.map(() => ''));
+      return;
+    }
+    toast(response.data, { type: 'error' });
+  };
 
   return (
     <S.Container>
@@ -69,7 +105,9 @@ const Contact = function Contact() {
                 }
                 <S.MainButtonDiv>
                   <S.MainButton
-                    onClick={() => {}}
+                    onClick={() => {
+                      sendMessage();
+                    }}
                   >
                     SEND MESSAGE
                   </S.MainButton>

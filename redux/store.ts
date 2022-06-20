@@ -1,4 +1,5 @@
 import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { callEndpoint } from 'endPoint/endPoint';
 import { ShowPopup } from 'types/types';
 import homeReducer from 'views/HomePage/redux';
 
@@ -30,7 +31,9 @@ export const { setHasSyncedWithStorage, setShowPopup } = counterSlice.actions;
 export const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: false,
-    thunk: true,
+    thunk: {
+      extraArgument: { callEndpoint },
+    },
   }),
   reducer: {
     app: counterSlice.reducer,

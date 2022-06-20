@@ -19,7 +19,7 @@ export const BgContainer = styled.div`
   width: 100%;
   height: calc(100% - ${headerHeight});
   margin-top: -1px;
-  padding-top: 17vh;
+  padding-top: 15vh;
   overflow: hidden;
   position: relative;
   @media(min-width: 1291px) {
@@ -96,7 +96,7 @@ export const MessageConatiner = styled.div`
 `;
 
 export const MessageBox = styled.div`
-  max-width: 345px;
+  max-width: 355px;
   width: 100%;
   height: max-content;
   background: ${Color(optionsColor).lighten(0.2).toString()};
@@ -129,7 +129,7 @@ export const Input = styled.input<any>`
 `;
 
 export const TextArea = styled.textarea`
-  height: 100px;
+  height: 150px;
   width: 100%;
   color: black;
   border-radius: 2px;

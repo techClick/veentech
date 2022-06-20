@@ -15,7 +15,7 @@ import postgres from 'assets/postgres.png';
 import excel from 'assets/excel.png';
 import powerBI from 'assets/powerbi.png';
 import python from 'assets/python.png';
-import pandas from 'assets/pandas.png';
+import datastudio from 'assets/datastudio.svg';
 import pdf from 'assets/pdf.png';
 import word from 'assets/word.png';
 import adwords from 'assets/adwords.png';
@@ -34,7 +34,7 @@ import hostinger from 'assets/hostinger.svg';
 import yandex from 'assets/yandex.png';
 import zoho from 'assets/zoho.png';
 import fastmail from 'assets/fastmail.png';
-import { faEnvelope, faEye, faGlobe, faMobileScreen, faRobot, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine, faEnvelope, faEye, faGlobe, faMobileScreen, faRobot, faServer } from '@fortawesome/free-solid-svg-icons';
 import Contacts from '../Contacts/Contacts';
 import * as S from './utils.styled';
 
@@ -171,23 +171,25 @@ export const services = [{
   />,
   description: `Utlizie software tools like Python, Excel and Power BI to
     visualize data and analyze your business.`,
-  icon: faEnvelope,
+  icon: faChartLine,
   path: '/services/dataanalysis',
   line1: 'Vizualize and analyze your data with our Data Analytics team.',
   line2: `We have accredited professionals in our data analytics team that can help
     you make critical decisions by creating interactive charts and graphs of your
     business dealings.`,
-  line3: `We support our data analysis with interactive reporting using Microsoft Power BI, PDF's and 
-    documents that contain findings and suggestions by our expert data analysts.`,
-  line4: (
-    <>
-      To view a sample of our report click
-      {' '}
-      <S.WhitePart>here</S.WhitePart>
-      .
-    </>
-  ),
-  images: [excel, powerBI, python, pandas, pdf, word],
+  line3: `We support our data analysis with interactive reporting using Google Data Studio, 
+    Microsoft Power BI, PDF's and documents that contain findings and suggestions by our
+    expert data analysts.`,
+  // line4: (
+  //   <>
+  //     To view a sample of our report click
+  //     {' '}
+  //     <S.WhitePart>here</S.WhitePart>
+  //     .
+  //   </>
+  // ),
+  line4: 'We also perform social media analytics.',
+  images: [excel, datastudio, powerBI, python, pdf, word],
   constDesc: 'our data analytics',
   price: {
     setup: {
@@ -214,7 +216,7 @@ export const services = [{
   path: '/services/marketing',
   line1: 'Grow your consumer base with our Digital Marketing service.',
   line2: `We have 10+ years experience creating Display Ads on Social and Media platforms as well
-    as Search Engine Marketing and Google SEO.`,
+    as in Email Marketing and Google SEO.`,
   line3: `Drive sales in your business by directing people to your store,
     displaying your products in their browsers as ads and showing up in their searches.
     Digital Marketing is what you need to acheive success in your business.`,
@@ -231,8 +233,8 @@ export const services = [{
     fee: {
       Nigeria: <><S.Big>₦30,000</S.Big><S.Small>/mo</S.Small></>,
       Africa: <><S.Big>$50</S.Big><S.Small>/mo</S.Small></>,
-      World1: <><S.Big>$500</S.Big><S.Small>/mo</S.Small></>,
-      World2: <><S.Big>$250</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$400</S.Big><S.Small>/mo</S.Small></>,
+      World2: <><S.Big>$200</S.Big><S.Small>/mo</S.Small></>,
     },
   },
 },

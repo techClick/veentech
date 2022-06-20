@@ -36,7 +36,7 @@ const ServiceDesc = function ServiceDesc({ service }:{ service: any }) {
           <S.Line2>{service?.line4}</S.Line2>
           <S.ButtonDiv>
             <S.MainButton onClick={() => dispatch(setShowPopup({
-              component: <GetStarted />,
+              component: <GetStarted type={`SERVICE: ${service.name}`} />,
               exitOnBgClick: true,
             }))}
             >

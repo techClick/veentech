@@ -57,7 +57,7 @@ export const IconCont = styled.div`
   right: 25px;
   bottom: 50%;
   transform: translateY(50%);
-  color: ${Color(headerColor).darken(0).toString()};
+  color: ${Color(headerColor).darken(0.1).toString()};
   @media(max-width: 272px) {
     display: none;
   }
@@ -158,6 +158,7 @@ export const Help = styled.div`
   background: ${optionsColor};
   padding: 21px 30px;
   margin-bottom: 25px;
+  border-radius: 2px;
 `;
 
 export const WhitePart = styled.span`

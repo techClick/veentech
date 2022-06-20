@@ -45,7 +45,7 @@ export const AssureCont = styled.div`
   height: max-content;
 `;
 
-const borderColor = Color(textColor2).darken(0.75).toString();
+const borderColor = Color(textColor2).darken(0.8).toString();
 const setOfTwoRes = '1157px';
 const setOfOneRes = '555px';
 export const Assurance = styled.div`

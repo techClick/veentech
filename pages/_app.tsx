@@ -1,7 +1,9 @@
 import React from 'react';
 import '../styles/globals.css';
 import 'react-phone-input-2/lib/style.css';
+import 'react-toastify/dist/ReactToastify.css';
 import type { AppProps } from 'next/app';
+import { ToastContainer } from 'react-toastify';
 import { useRouter } from 'next/router';
 import { Provider } from 'react-redux';
 import Global from 'components/Global/Global';
@@ -23,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
   return (
     <Provider store={store}>
+      <ToastContainer />
       {
         loading ? (
           <Loading />
