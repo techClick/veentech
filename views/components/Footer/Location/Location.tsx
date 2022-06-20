@@ -35,7 +35,7 @@ const Location = function Location({ isAuto }:{ isAuto?: boolean }) {
           </S.LogoCont>
         </S.LogoCont1>
         <S.Number>
-          hr@veentech.com
+          hr@zavotech.com
         </S.Number>
       </S.Container2>
     </S.MainCont>

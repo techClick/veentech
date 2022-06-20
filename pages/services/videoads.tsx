@@ -8,7 +8,7 @@ const VideoAds: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Video Adversting - Veentech</title>
+        <title>Video Adversting - Zavotech</title>
       </Head>
       <Service service="Video Advertising" />
     </S.Container>

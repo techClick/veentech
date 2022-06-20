@@ -8,7 +8,7 @@ const Email: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Business Email - Veentech</title>
+        <title>Business Email - Zavotech</title>
       </Head>
       <Service service="Business Email" />
     </S.Container>

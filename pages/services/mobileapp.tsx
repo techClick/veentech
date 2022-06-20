@@ -8,7 +8,7 @@ const MobileApp: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Custom Mobile Application - Veentech</title>
+        <title>Custom Mobile Application - Zavotech</title>
       </Head>
       <Service service="Custom Mobile App" />
     </S.Container>

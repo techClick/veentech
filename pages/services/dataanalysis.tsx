@@ -8,7 +8,7 @@ const DataAnalysis: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Automation - Veentech</title>
+        <title>Automation - Zavotech</title>
       </Head>
       <Service service="Data Analysis" />
     </S.Container>

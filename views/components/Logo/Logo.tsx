@@ -6,7 +6,7 @@ const Logo = function Logo({ width, fontSize }:{ width?: string, fontSize?: stri
   return (
     <S.Container width={width}>
       <S.Image src={logo.src} width={width} />
-      <S.Label fontSize={fontSize}>VEENTECH</S.Label>
+      <S.Label fontSize={fontSize}>ZAVOTECH</S.Label>
     </S.Container>
   );
 };

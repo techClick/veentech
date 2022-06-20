@@ -8,7 +8,7 @@ const Website: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Business Website - Veentech</title>
+        <title>Business Website - Zavotech</title>
       </Head>
       <Service service="Business Website" />
     </S.Container>

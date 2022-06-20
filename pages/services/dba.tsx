@@ -8,7 +8,7 @@ const DBA: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>Database Management - Veentech</title>
+        <title>Database Management - Zavotech</title>
       </Head>
       <Service service="Database Management" />
     </S.Container>

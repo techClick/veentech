@@ -8,7 +8,7 @@ const ContactHome: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>VEENTECH - Contact</title>
+        <title>Contact - Zavotech</title>
       </Head>
       <Contact />
     </S.Container>

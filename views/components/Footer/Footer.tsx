@@ -59,7 +59,7 @@ function Footer() {
               </S.FooterRightSection2>
             </S.FooterRightSection>
           </S.FooterSectionContainer>
-          <S.Copyright>Copyright © 2022 VEENTECH</S.Copyright>
+          <S.Copyright>Copyright © 2022 ZAVOTECH</S.Copyright>
         </S.FooterContainer>
       </MediaQuery>
       <MediaQuery maxWidth={900}>
@@ -86,7 +86,7 @@ function Footer() {
           </S.FooterSection>
           <S.Copyright>
             <Location isAuto />
-            <div>Copyright © 2022 VEENTECH</div>
+            <div>Copyright © 2022 ZAVOTECH</div>
           </S.Copyright>
         </S.FooterContainer>
       </MediaQuery>

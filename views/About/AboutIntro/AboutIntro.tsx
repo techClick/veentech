@@ -14,7 +14,7 @@ const AboutIntro = function AboutIntro() {
           </S.Label>
           <S.Label2>
             Our team consists of experts in the fields of Software Development, Data Science
-            and Digital Marketing. Veentech was founded in 2022 by Ikechi Anya, a
+            and Digital Marketing. Zavotech was founded in 2022 by Ikechi Anya, a
             Software Engineer that has been developing applications and optimizing businesses
             since 2011.
           </S.Label2>

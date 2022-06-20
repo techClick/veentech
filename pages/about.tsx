@@ -8,7 +8,7 @@ const AboutHome: NextPage = () => {
   return (
     <S.Container>
       <Head>
-        <title>VEENTECH - About</title>
+        <title>About - Zavotech</title>
       </Head>
       <About />
     </S.Container>
