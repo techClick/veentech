@@ -13,7 +13,7 @@ export const Container = styled.div`
   padding-top: 10px;
   padding-left: 8px;
   transform: translateX(-100%);
-  z-index: 4;
+  z-index: 6;
 `;
 
 export const LogoCont = styled.div`
