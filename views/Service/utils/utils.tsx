@@ -213,7 +213,7 @@ export const services = [{
   description: `Take advantage of tools like Google Adwords, Facebook and YouTube Display Ads
     and grow your consumer base.`,
   icon: faEye,
-  path: '/services/marketing',
+  path: '/services/digitalmarketing',
   line1: 'Grow your consumer base with our Digital Marketing service.',
   line2: `We have 10+ years experience creating Display Ads on Social and Media platforms as well
     as in Email Marketing and Google SEO.`,
