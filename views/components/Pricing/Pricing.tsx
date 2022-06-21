@@ -22,6 +22,7 @@ const Pricing = function Pricing({ useService }:{ useService?: string}) {
   } else {
     priceKey = 'World2';
   }
+  if (!country || !continent) priceKey = 'World1';
   const service: any = services.find((serviceTmp) => serviceTmp.name === selectedService);
 
   return (
