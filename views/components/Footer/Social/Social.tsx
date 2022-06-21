@@ -8,14 +8,14 @@ const Social = function Social() {
   return (
     <S.Container>
       <S.IconContainer
-        onClick={() => window.open('https://linkedin.com/company/topdevafrica/', '_blank')}
+        onClick={() => window.open('https://linkedin.com/company/zavotech/', '_blank')}
       >
         <S.Icon>
           <FontAwesomeIcon icon={faLinkedinIn as IconDefinition} size="2x" />
         </S.Icon>
       </S.IconContainer>
       <S.IconContainer
-        onClick={() => window.open('https://facebook.com/topdevafrica/', '_blank')}
+        onClick={() => window.open('https://facebook.com/zavotech/', '_blank')}
       >
         <S.Icon>
           <FontAwesomeIcon icon={faFacebookF as IconDefinition} size="2x" />
