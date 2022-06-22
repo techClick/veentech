@@ -59,7 +59,7 @@ export const services = [{
     setup: {
       Nigeria: <><S.Big>₦3.5m</S.Big><S.Small>/mo</S.Small></>,
       Africa: <><S.Big>$5,500</S.Big><S.Small>/mo</S.Small></>,
-      World1: <><S.Big>$20,000</S.Big><S.Small>/mo</S.Small></>,
+      World1: <><S.Big>$15,000</S.Big><S.Small>/mo</S.Small></>,
       World2: <><S.Big>$10,000</S.Big><S.Small>/mo</S.Small></>,
     },
     fee: {
