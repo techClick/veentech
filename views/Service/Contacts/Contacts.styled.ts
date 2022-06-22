@@ -6,11 +6,11 @@ import { detailsColor } from '../ServiceDesc/ServiceDesc.styled';
 
 export const MoreCont = styled.div`
   background: ${detailsColor};
-  padding: 26px 30px;
-  padding-top: 23px;
+  padding: 20px 20px;
+  padding-top: 15px;
   width: 100%;
   max-width: max-content;
-  margin: auto;
+  // margin: auto;
   margin-top: 15px;
   color: ${textColor2};
   border-radius: 5px;
@@ -81,7 +81,6 @@ export const NumberCont = styled.div`
   align-items: center;
   height: 0px;
   overflow: hidden;
-  transition: all 0.25s ease-in;
   @media(max-width: 258px) {
     padding: 5px;
   }
@@ -111,6 +110,8 @@ export const PhoneNumber = styled.div`
   font-size: calc(13px + 0.65vw);
   font-weight: 700;
   margin-left: 15px;
+  transition: all 0.25s ease-in;
+  opacity: 0;
   @media(max-width: 258px) {
     margin-left: 5px;
   }

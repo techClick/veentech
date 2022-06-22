@@ -8,11 +8,13 @@ const Contacts = function Contacts({ msg }:{ msg: string }) {
   const router = useRouter();
   const showPhoneNumber = () => {
     const phoneNumber = document.getElementById('phoneNumber');
-    if (phoneNumber) {
+    const numbers = document.getElementById('numbers');
+    if (phoneNumber && numbers) {
       phoneNumber.style.marginTop = '15px';
       phoneNumber.style.padding = '8px 15px';
       phoneNumber.style.paddingRight = '18px';
       phoneNumber.style.height = 'max-content';
+      numbers.style.opacity = '1';
     }
   };
 
@@ -34,7 +36,7 @@ const Contacts = function Contacts({ msg }:{ msg: string }) {
         <S.PhoneIconCont>
           <S.PhoneIcon><FontAwesomeIcon icon={faPhone} size="2x" /></S.PhoneIcon>
         </S.PhoneIconCont>
-        <S.PhoneNumber>+2348130746341</S.PhoneNumber>
+        <S.PhoneNumber id="numbers">+2348130746341</S.PhoneNumber>
       </S.NumberCont>
     </S.MoreCont>
   );

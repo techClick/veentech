@@ -21,7 +21,7 @@ const Consult = function Consult({ topPad }:{ topPad?: string }) {
                   Leave it to us.
                 </S.TopText>
                 <S.Text>
-                  We foster success in your business just days after setup.
+                  We promote success in your business just days after setup.
                 </S.Text>
                 <S.ConsultUs
                   onClick={() => dispatch(setShowPopup({
