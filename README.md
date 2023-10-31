@@ -1,6 +1,3 @@
-# Deployment
-The site is deployed on [https://resilient-gumption-9bc18f.netlify.app](https://resilient-gumption-9bc18f.netlify.app).
-```
 Deployment steps.
 
 I use CI/CD on Netlify.
